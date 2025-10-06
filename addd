@@ -1,0 +1,708 @@
+ <section style="display: flex; align-items: center; justify-content: center; gap: 10px; padding: 10px; background-color: #f9f9f9; border-bottom: 1px solid #ddd;">
+  <img src="https://tse1.mm.bing.net/th/id/OIP.d13fS_p3ogsIpTN3B66YPAHaHg?cb=12&w=1010&h=1024&rs=1&pid=ImgDetMain&o=7&rm=3.png" 
+       alt="شعار الجامعة" style="width:50px; height:auto;">
+  <h1 style="font-size: 16px; margin: 0;">بوابة طلاب جامعة العلوم والتكنولوجيا اليمن - قسم المحاسبة</h1>
+</section>
+ <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>ملفات قسم المحاسبة</title>
+  <style>
+    body {
+      font-family: "Tahoma", Arial, sans-serif;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 0;
+      color: #2c3e50;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 22px;
+    }
+    nav {
+      background: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    nav a:hover, nav a.active {
+      background: #f39c12;
+      color: white;
+    }
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 700px;
+    }
+    .card h2 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+    .card p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #34495e;
+    }
+    .card strong {
+      color: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+
+  
+<!-- رسالة على الواجهة -->
+  <section>
+    <div class="card">
+      <h2>تنويه من المصمم</h2>
+      <p>
+        إخواني وزملائي الكرام 🌹، هذا الملف من تصميم أخوكم وزميلكم 
+        <strong>عبدالمجيد المنيعي</strong>، أسأل الله أن أكون قد وفّقت في خدمتكم بما أستطيع،  
+        وأرجو منكم الدعاء لي بظهر الغيب.
+      <br>
+        لأي ملاحظات، إضافات، أو طلب تعديل على أي مادة أو ملف، يمكنكم التواصل معي على الرقم :<br>
+        <strong>0538044789</strong>
+<br>
+        <strong>انتقل الا اسفل الشاشة لعرض المواد👇</strong>
+<nav>
+ <a href="#ads">📢 إعلانات</a>
+  </nav>
+    </div>
+
+  </section>
+
+</body>
+</html>
+  
+
+
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>المواد - تخصص المحاسبة</title>
+  <style>
+    :root{--main:#0d6efd;--bg:#f8f9fa;--card:#fff;--muted:#6c757d}
+    html,body{height:100%}
+    body{
+      font-family: Arial, "Noto Naskh Arabic", sans-serif;
+      direction: rtl; margin:0; background:var(--bg); color:#111; padding:18px; box-sizing:border-box;
+    }
+    header{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}
+    header h1{margin:0;color:var(--main);font-size:20px}
+    header p{margin:0;color:var(--muted)}
+    .main-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+    .main-tabs button{background:var(--main);color:white;border:none;padding:9px 14px;border-radius:8px;cursor:pointer;font-weight:600}
+    .main-tabs button.inactive{background:#cfe2ff;color:var(--main);font-weight:600}
+    .container{display:flex;gap:18px;align-items:flex-start}
+    .left{width:320px;min-height:300px}
+    .card{background:var(--card);padding:12px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+    .section-title{font-size:16px;margin:0 0 10px 0;color:var(--main)}
+    .subject-list{list-style:none;padding:0;margin:0;max-height:72vh;overflow:auto}
+    .subject-list li{padding:8px;border-radius:8px;cursor:pointer;margin-bottom:6px}
+    .subject-list li:hover{background:#f1f5ff}
+    .subject-list li.active{background:var(--main);color:white}
+    .right{flex:1;min-height:300px}
+    .subject-header{display:flex;justify-content:space-between;align-items:center;gap:10px}
+    .subject-header h2{margin:0;color:var(--main);font-size:18px}
+    .back-link{background:#e9ecef;border:none;padding:8px 10px;border-radius:8px;cursor:pointer}
+    .sub-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    .sub-tabs button{background:#f1f1f1;border:none;padding:8px 12px;border-radius:8px;cursor:pointer}
+    .sub-tabs button.active{background:var(--main);color:white}
+    .tab-area{margin-top:12px;background:var(--card);padding:12px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.04);min-height:220px}
+    .tab-area ul{list-style:none;padding:0;margin:0}
+    .tab-area li{margin:8px 0}
+    .link{display:inline-block;padding:8px 10px;border-radius:8px;background:#f8f9ff;color:var(--main);text-decoration:none;font-weight:600}
+    .hint{color:var(--muted);font-size:13px;margin-top:8px}
+    @media(max-width:900px){.container{flex-direction:column}.left{width:100%}}
+    /* واجهة تنويه بسيطة أعلى */
+    .notice{background:#f8f9fa;padding:18px;margin-bottom:18px;border:2px solid var(--main);border-radius:12px;text-align:center;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+    .notice h2{color:var(--main);margin:0 0 6px}
+    .notice p{margin:6px 0;color:#333}
+  </style>
+</head>
+<body>
+
+  
+ 
+
+  <!-- تبويبات رئيسية: متطلبات -->
+  <div class="main-tabs">
+    <button id="tab-college" onclick="selectMain('college')">📚 متطلبات كلية (52 ساعة)</button>
+    <button id="tab-major" onclick="selectMain('major')" class="inactive">📘 متطلبات تخصص (52 ساعة)</button>
+    <button id="tab-univ" onclick="selectMain('univ')" class="inactive">🏛 متطلبات جامعية (25 ساعة)</button>
+    <button id="tab-optional" onclick="selectMain('Optional')" class="inactive">🎯 متطلبات اختيارية 6 ساعة</button>
+    <button id="tab-ads" onclick="selectMain('Advertisement')" class="inactive">📢 إعلان</button>
+  </div>
+
+  <div class="container">
+    <!-- اليسار: قائمة المواد -->
+    <div class="left">
+      <div class="card">
+        <p class="section-title">قائمة المواد</p>
+        <ul id="subjects" class="subject-list"></ul>
+      </div>
+    </div>
+
+    <!-- اليمين: تفاصيل المادة -->
+    <div class="right">
+      <div id="subjectCard" class="card" style="display:none">
+        <div class="subject-header">
+          <h2 id="subjectTitle">عنوان المادة</h2>
+          <div><button class="back-link" onclick="showSubjects()">رجوع للقائمة</button></div>
+        </div>
+        <div class="sub-tabs" id="subTabs"></div>
+        <div class="tab-area" id="tabArea"><p class="hint">اختر تبويبًا لعرض الملفات أو الفيديوهات</p></div>
+      </div>
+
+      <div id="emptyCard" class="card">
+        <h3 class="section-title">إرشادات سريعة</h3>
+        <p class="hint">اضغط على أحد الأقسام أعلى (متطلبات كلية / تخصص / جامعية / اختيارية / اعلان) ثم اختر مادة من الجهة اليسرى.</p>
+      </div>
+    </div>
+  </div>
+
+<script>
+/* === DATA: عدّل هنا لإضافة روابط أو إعلانات === */
+const data = {
+  college: [
+    { id:'acc1', title:'مبادئ المحاسبة 1 (4 ساعات)',
+      videos:[
+        {label:'شرح الأستاذ صادق – المقرر كامل (نظري + حسابي)', url:'https://www.youtube.com/playlist?list=PL8436LuIZoAotV2UNxTVS6XRaidclcpCS'},
+        {label:'د. نبيل – المحاضرة 1', url:'https://youtu.be/Ys40yYupa1U'},
+        {label:'د. نبيل – المحاضرة 2', url:'https://youtu.be/u6kqTY2vhOE'},
+        {label:'د. نبيل – المحاضرة 3', url:'https://youtu.be/neJ-z9Gh8yU'},
+        {label:'د. نبيل – المحاضرة 4', url:'https://youtu.be/4nOBWSQXsck'},
+        {label:'د. نبيل – المحاضرة 5', url:'https://youtu.be/ARIAc8yfZZM'},
+        {label:'د. نبيل – المحاضرة 6', url:'https://youtu.be/37wmv8L2C9A'}
+      ],
+      books:[
+        {label:'كتاب مبادئ المحاسبة 1 - ', url:'https://drive.google.com/open?id=1hNg6XQ8GcyzdVAxjCfFf6KE8Nq9N0kfK&usp=drive_fs=drivesdk'},
+        {label:'كتاب مبادئ المحاسبة 1 محاضرات - ', url:'https://drive.google.com/file/d/1P8OTvY0NznAgg6PFBEp6dUuQSErfeV9H/view?usp=drivesdk=drivesdk'}
+
+      ],
+      models:[
+        {label:'نماذج الامتحانات (بشير الاهدل)', url:'https://drive.google.com/open?id=106Mks4aiMVCEARC9fcEOwclIWR7JGFCe&usp=drive_fs'},
+        {label:'تجميع مقالي (جار الله)', url:'https://drive.google.com/open?id=1ECPhRjiUp3VSQdNXGLGG74n0LpRPjCrE&usp=drive_fs=drivesdk'}
+    ],
+      summaries:[],
+      Telegram:[
+        {label:'قناة روعة', url:'https://t.me/roz_155'},
+        {label:'قناة ريم فهد', url:'https://t.me/reem53494'},
+        {label:'قناة نشوى', url:'https://t.me/nashwa2211'},
+        {label:'قناة حسن', url:'https://t.me/+eRk1uNqUcIRlMTlk'},
+        {label:'كل ما يخص المادة', url:'https://t.me/+JqC5AzbvnvU0MDY8'}
+      ],
+      news:[
+        {label:'التواصل مع المشرفين لاي معلومات اخرى'},
+        {label:'نوع المادة: مقالية وتحتاج وقت في المذاكرة.'},
+{label:'🟠نمط الاختبار النهائي:'},
+{label:'5 أسئلة صح وخطأ'},
+{label:'4 أسئلة اختيار وحيد'},
+{label:'2 أسئلة اختيار متعدد'},
+{label:'5 أسئلة مقالية (تحذف منها سؤال واحد)'},
+{label:'(المقالي عليه 80 )'},
+{label:'🟠طريقة المذاكرة:'},
+{label:'البدء بفهم الأساسيات والقيود بدقة قبل الانتقال إلى التفاصيل.'},
+{label:'اختيار مصدر شرح يناسب أسلوبك في الفهم، مثل شرح الدكتور نبيل أو الزميل صادق.'},
+{label:'الإكثار من حل الأسئلة والنماذج التدريبية، والتركيز على حل كل سؤال أكثر من مرة حتى تتقنه.'},
+{label:'الاستفادة من كون الاختبار مقاليًا، فهو يمنح فرصة لجمع درجات من خطوات الحل.'},
+{label:'🟠المحذوف من الكتاب هي الوحدة السادسه فقط'},
+{label:'✅ تنويه:'},
+{label:'الاختبار يحتاج انه تدرب على مسائل اكثر من مره لكي تثبت المعلومه'}
+      ]
+    },
+    // باقي مواد المتطلبات الكلية (بدون روابط الآن)
+    {id:'acc2', title:'مبادئ المحاسبة 2', 
+videos:[       
+        {label:'د. نبيل – محاضره 1 تسوية المصروفات', url:'https://drive.google.com/file/d/1YoHdVdbnZbPUuxCBhH7s8RDUqrQN6cjF/view?usp=drivesdk'},
+        {label:'د. نبيل – محاضره 2 الايرادات', url:'https://drive.google.com/file/d/1Ch1GMWf__49f0fAWzxPbhVtlIreitFuc/view?usp=drivesdk'},
+        {label:'د. نبيل – المحاضرة 3', url:'https://drive.google.com/file/d/1Y3meGafXNep8N9eJHzwI63yOCspTfC0i/view?usp=drivesdk'},
+        {label:'د. نبيل – المحاضرة 4', url:'https://drive.google.com/file/d/1Tf5zr4_28nbhp4IQ10cvzcr5CyyhjzWt/view?usp=drivesdk'},
+        {label:'د. نبيل – المحاضرة 5', url:'https://drive.google.com/file/d/1OBHMxCZ9hBBMq7W5_otRpzdbxvEiqlZV/view?usp=drivesdk'},
+        {label:'د. نبيل – المحاضرة 6', url:'https://drive.google.com/file/d/1vMgKVe1-h1BFGDBzDBU9C3JDN7nDqhPO/view?usp=drivesdk'}], 
+
+books:[
+       {label:'كتاب مبادئ المحاسبة 1 - ', url:'https://drive.google.com/open?id=1NXdzgeIGtcIWTEr71GCeUJIkXfSmfUxX&usp=drive_fs=drive_fs=drivesdk'}], 
+models:[
+        {label:'محاسبة 2 النظري 🫶🏼دعواتكم - ', url:'https://drive.google.com/open?id=1SUuSZ7eO4LeOfzjiHTe3muJJX2rC5FkX&usp=drive_fs=drivesdk'},
+        {label: 'اختبر نفسك نماذج النظري - ',url: 'https://docs.google.com/forms/d/e/1FAIpQLSfY1ABSc1qAQQ6Tg1Y2vAA4mgrzQNgUITwL792Hb95dbddgOA/viewform?usp=drivesdk'}], 
+summaries:[
+           {label:'بيان_الأثر_في_الأرباح_والخسائر_والميزانية_العمومية^سمية_الوجيه^', url:'https://drive.google.com/open?id=1gQL9_mVFmBqG7t_1V-cWSP-YPxG4JZJQ&usp=drive_fs=drive_fs'},
+           {label:'تجميع_المسائل_الحسابيه_حُسن_علي_٢معدل', url:'https://drive.google.com/open?id=1__fOGim2gysRw9ZzUGQ_6l0MnEaVpNvB&usp=drive_fs=drivesdk'},
+           {label:'شرح مُبسط للمخصصات (مريـــــم )', url:'https://drive.google.com/open?id=1yKNVKFdrY3BlB990EfT3d7MJvIsOpRCj&usp=drive_fs=drive_fs'},
+           {label:'ملخص للمصروفات والإيرادات ولد أنعم ', url:'https://drive.google.com/open?id=1F5rERyG6S0j4A6w-4_C6CxL7KSTeWCZx&usp=drive_fs=drivesdk'}], 
+Telegram:[
+        {label:'قناة حسن', url:'https://t.me/+eRk1uNqUcIRlMTlk'},], 
+news:[
+      {label:'🟠 نوع المادة:'},
+{label:'مقالية وتحتاج وقت كافٍ في المذاكرة والتركيز.'},
+{label:'🟠 نمط الاختبار النهائي:'},
+{label:'يأتي الاختبار بـ 3 أسئلة مقالية تُحل منها سؤالان فقط، ويمثل السؤالان 60 درجة.'},
+{label:'🟠 طريقة المذاكرة:'},
+{label:'الجزء الحسابي يُذاكر من النماذج.'},
+{label:'الجزء النظري من الكتاب.'},
+{label:'تابعوا شرح الأخت حُسن أو الدكتور نبيل حسب ما تفضلونه.'},
+{label:'🟠 المحذوف من الكتاب:'},
+{label:'الكتاب كاملاً عدا ما يلي:'},
+{label:'الوحدة الرابعة: من صـ (262) إلى صـ (288).'},
+{label:'الوحدة الخامسة: من صـ (315) إلى صـ (338).'},
+{label:'الوحدة السابعة: الطرق المحاسبية من صـ (375) إلى صـ (462).'}]},
+    {id:'busi', title:'مبادئ إدارة الأعمال', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'eco_micro', title:'مبادئ الاقتصاد الجزئي', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'eco_macro', title:'مبادئ الاقتصاد الكلي', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'law', title:'القانون التجاري', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'marketing', title:'مبادئ التسويق', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'stat', title:'إحصاء تطبيقي', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'fin_man', title:'الإدارة المالية', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'purch', title:'إدارة المشتريات والمخازن', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'math_admin', title:'الرياضيات في العلوم الإدارية', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'ethics', title:'أخلاقيات منظمات الأعمال', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'moneybank', title:'اقتصاديات النقود والبنوك', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'self_skill', title:'مهارة التعلم الذاتي', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'eng_terms', title:'مصطلحات ومراسلات باللغة E', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'org_behavior', title:'السلوك التنظيمي', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'grad_research', title:'بحث التخرج', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]}
+  ],
+
+  major: [
+    {id:'man_acc', title:'محاسبة إدارية', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'audit1', title:'مراجعة وتدقيق الحسابات 1', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'audit2', title:'مراجعة وتدقيق الحسابات 2', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'corp_acc', title:'محاسبة شركات الأموال', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'part_acc', title:'محاسبة شركات الأشخاص', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'cost_acc', title:'محاسبة التكاليف', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'cost_sys', title:'نظم محاسبة التكاليف', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'acc_english', title:'دراسات محاسبية باللغة الانجليزية', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'tax1', title:'المحاسبة الضريبية 1', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'tax2', title:'المحاسبة الضريبية 2', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'gov_acc', title:'المحاسبة الحكومية والقومية', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'int_acc', title:'المحاسبة الدولية', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'spec_acc', title:'محاسبة المنشآت المتخصصة', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'mis1', title:'نظم المعلومات المحاسبية 1', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'mis2', title:'نظم المعلومات المحاسبية 2', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'fin_ent', title:'محاسبة المنشات الماليه', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'acc_theory', title:'النظرية المحاسبية', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'acc_apps', title:'تطبيقات محاسبية بالحاسوب', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]}
+  ],
+
+  univ: [
+    {id:'arabic', title:'اللغة العربية', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'islamic', title:'ثقافة اسلامية', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'quran', title:'القرآن الكريم', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'it_skills', title:'مهارات الحاسوب', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'eng1', title:'اللغة الإنجليزية 1', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'eng2', title:'اللغة الإنجليزية 2', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'comm_skills', title:'مهارات الاتصال', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'leadership', title:'تنمية المهارات القيادية', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'critical', title:'التفكير الناقد', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]},
+    {id:'research', title:'طرق البحث العلمي', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]}
+  ],
+
+  Optional: [
+    {id:'opt1', title:'متطلب اختياري مثال', videos:[], books:[], models:[], summaries:[], Telegram:[], news:[]}
+  ],
+
+  /* إعلانات تظهر مباشرة عند اختيار تبويب "اعلان" */
+  AdvertisementAnnouncements: [
+    {label:'إعلان الجامعة: تم تعديل الجدول الدراسي للأسبوع القادم. راجع لوحة الإعلانات.', url:''},
+    {label:'إعلان طلابي: تسليم مشاريع التخرج يوم الأحد الساعة 10 صباحاً.', url:''},
+    {label:'جدول اعمال السنة 2025 - PDF', url:'https://drive.google.com/file/d/1fm3caf275w1Xr9IJ2BptKzmC99v2jQtR/view?usp=drivesdk=drivesdk'},
+    {label:'اعلان تحديث الخطة الدراسية لبعض المواد 2025 - PDF', url:'https://drive.google.com/file/d/1TOVYmkyyWV9GDlJLUidv0_kHM12pHITT/view?usp=drivesdk=drivesdk=drivesdk'},
+  ]
+};
+/* === نهاية البيانات === */
+
+
+/* === UI logic === */
+const subjectsListEl = document.getElementById('subjects');
+const subjectCard = document.getElementById('subjectCard');
+const emptyCard = document.getElementById('emptyCard');
+const subjectTitleEl = document.getElementById('subjectTitle');
+const subTabsEl = document.getElementById('subTabs');
+const tabAreaEl = document.getElementById('tabArea');
+
+let currentMain = 'college';
+let currentSubject = null;
+let currentSubTab = null;
+
+function updateMainButtons(mainKey){
+  const mapping = {
+    college:'tab-college',
+    major:'tab-major',
+    univ:'tab-univ',
+    Optional:'tab-optional',
+    Advertisement:'tab-ads'
+  };
+  for(const k in mapping){
+    const btn = document.getElementById(mapping[k]);
+    if(!btn) continue;
+    btn.classList.toggle('inactive', k !== mainKey);
+  }
+}
+
+function selectMain(key){
+  currentMain = key;
+  updateMainButtons(key);
+
+  // special case: Advertisement -> show announcements directly (no subject list)
+  if(key === 'Advertisement'){
+    showAdvertisement();
+    return;
+  }
+
+  renderSubjects(key);
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function renderSubjects(mainKey){
+  subjectsListEl.innerHTML = '';
+  const arr = data[mainKey] || [];
+  arr.forEach(item=>{
+    const li = document.createElement('li');
+    li.textContent = item.title;
+    li.dataset.id = item.id;
+    li.onclick = ()=>selectSubject(item.id);
+    li.id = 'subject-'+item.id;
+    subjectsListEl.appendChild(li);
+  });
+  // hide subject card, show empty instructions
+  subjectCard.style.display='none';
+  emptyCard.style.display='block';
+}
+
+function showAdvertisement(){
+  // hide subjects list (clear) and show card with announcements directly
+  subjectsListEl.innerHTML = '';
+  subjectCard.style.display='block';
+  emptyCard.style.display='none';
+  subjectTitleEl.textContent = '📢 الإعلانات';
+  subTabsEl.innerHTML = ''; // no sub-tabs for ads
+
+  tabAreaEl.innerHTML = '';
+  const h = document.createElement('h3'); h.textContent = 'إعلانات مهمة';
+  tabAreaEl.appendChild(h);
+
+  if(!data.AdvertisementAnnouncements || data.AdvertisementAnnouncements.length===0){
+    const p = document.createElement('p'); p.className='hint'; p.textContent = 'لا توجد إعلانات حاليا.';
+    tabAreaEl.appendChild(p);
+    return;
+  }
+
+  const ul = document.createElement('ul');
+  data.AdvertisementAnnouncements.forEach(it=>{
+    const li = document.createElement('li');
+    if(it.url){
+      const a = document.createElement('a'); a.href = it.url; a.target='_blank'; a.rel='noopener'; a.className='link'; a.textContent = it.label;
+      li.appendChild(a);
+    } else {
+      const span = document.createElement('div'); span.textContent = it.label; span.style.color='var(--muted)'; li.appendChild(span);
+    }
+    ul.appendChild(li);
+  });
+  tabAreaEl.appendChild(ul);
+}
+
+function findSubjectById(id){
+  const arr = data[currentMain] || [];
+  return arr.find(s=>s.id===id);
+}
+
+function selectSubject(id){
+  currentSubject = findSubjectById(id);
+  if(!currentSubject) return;
+  document.querySelectorAll('.subject-list li').forEach(li=>li.classList.remove('active'));
+  const liEl = document.getElementById('subject-'+id); if(liEl) liEl.classList.add('active');
+
+  subjectCard.style.display='block';
+  emptyCard.style.display='none';
+  subjectTitleEl.textContent = currentSubject.title;
+
+  renderSubTabs();
+  openSubTab('videos'); // default
+  subjectCard.scrollIntoView({behavior:'smooth'});
+}
+
+function showSubjects(){
+  currentSubject = null;
+  document.querySelectorAll('.subject-list li').forEach(li=>li.classList.remove('active'));
+  subjectCard.style.display='none';
+  emptyCard.style.display='block';
+}
+
+function renderSubTabs(){
+  subTabsEl.innerHTML = '';
+  const tabs = [
+    {key:'videos', label:'🎥 فيديوهات'},
+    {key:'books', label:'📑 كتب'},
+    {key:'models', label:'📂 نماذج'},
+    {key:'summaries', label:'📝 ملخصات'},
+    {key:'Telegram', label:'📌 تليجرام'},
+    {key:'news', label:'📢 إعلانات'}
+  ];
+  tabs.forEach(t=>{
+    const btn = document.createElement('button');
+    btn.textContent = t.label;
+    btn.onclick = ()=>openSubTab(t.key);
+    btn.id = 'subbtn-'+t.key;
+    subTabsEl.appendChild(btn);
+  });
+}
+
+function openSubTab(tabKey){
+  currentSubTab = tabKey;
+  document.querySelectorAll('.sub-tabs button').forEach(b=>b.classList.remove('active'));
+  const btn = document.getElementById('subbtn-'+tabKey); if(btn) btn.classList.add('active');
+
+  tabAreaEl.innerHTML = '';
+  if(!currentSubject){
+    tabAreaEl.innerHTML = '<p class="hint">اختر مادة لعرض المحتوى.</p>';
+    return;
+  }
+
+  const items = currentSubject[tabKey] || [];
+  const titleMap = { videos:'قائمة الفيديوهات', books:'الكتب (PDF/ملفات)', models:'نماذج / ملفات', summaries:'الملخصات', Telegram:'قنوات تليجرام', news:'الإعلانات' };
+  const h = document.createElement('h3'); h.textContent = titleMap[tabKey] || 'المحتوى'; tabAreaEl.appendChild(h);
+
+  if(items.length===0){
+    const p = document.createElement('p'); p.className='hint'; p.textContent = 'لا يوجد محتوى هنا بعد. .';
+    tabAreaEl.appendChild(p); return;
+  }
+
+  const ul = document.createElement('ul');
+  items.forEach(it=>{
+    const li = document.createElement('li');
+    if(it.url){
+      const a = document.createElement('a'); a.href = it.url; a.target='_blank'; a.rel='noopener'; a.className='link'; a.textContent = it.label || it.url;
+      li.appendChild(a);
+    } else {
+      const span = document.createElement('div'); span.textContent = it.label || ''; span.style.color='var(--muted)';
+      li.appendChild(span);
+    }
+    if(it.desc){
+      const d = document.createElement('div'); d.style.marginTop='6px'; d.style.color='var(--muted)'; d.textContent = it.desc; li.appendChild(d);
+    }
+    ul.appendChild(li);
+  });
+  tabAreaEl.appendChild(ul);
+}
+
+/* انطلق */
+selectMain('college');
+</script>
+</body>
+</html>
+
+ </p>📚 تخصص: المحاسبة</p>
+      </p>نظام المواد — اضغط على أحد الأقسام ثم اختَر المادة لعرض محتواها</p>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>ملفات قسم المحاسبة</title>
+  <style>
+    body {
+      font-family: "Tahoma", Arial, sans-serif;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 0;
+      color: #2c3e50;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 22px;
+    }
+    nav {
+      background: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    nav a:hover, nav a.active {
+      background: #f39c12;
+      color: white;
+    }
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 700px;
+    }
+    .card h2 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+    .card p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #34495e;
+    }
+    .card strong {
+      color: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+
+ 
+    <header>
+       ملفات قسم المحاسبة - كلية إدارة الأعمال
+     </header>
+<
+
+  <!-- مكان المحتوى -->
+  <section>
+    <h2 id="ads">📢 الإعلانات</h2>
+    <p>✅ تم تعديل جدول أعمال السنة، الرجاء مراجعة هذه الصفحة باستمرار للاطلاع على أي جديد.</p>
+    <p>للاطلاع على جدول الاعمال السنوي وغيرة من الاعلانات اضغط تبويب اعلان في الاعلى.</p>
+  </section>
+
+
+<!-- زر رئيسي لفتح الرموز -->
+<div style="position: fixed; bottom: 20px; left: 20px; z-index:9999;">
+  <button onclick="toggleButtons()" 
+     title="التواصل"
+     style="background-color: white; 
+            border-radius: 50%; width: 50px; height: 50px; 
+            display: flex; align-items: center; justify-content: center; 
+            border:none; cursor:pointer; padding:5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);">
+    <img src="https://cdn-icons-png.flaticon.com/512/561/561184.png" alt="تواصل" style="width:28px; height:28px;">
+  </button>
+
+  <!-- الأزرار الفرعية -->
+  <div id="subButtons" style="display:none; flex-direction: column; gap: 10px; margin-top:10px;">
+    <!-- واتساب -->
+    <button onclick="showList('whatsapp')" title="أرقام واتساب"
+       style="background-color: white; border-radius: 50%; width: 45px; height: 45px;
+              display: flex; align-items: center; justify-content: center; border:none; cursor:pointer; padding:5px;
+              box-shadow: 0 2px 5px rgba(0,0,0,0.3);">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" style="width:25px; height:25px;">
+    </button>
+
+    <!-- قروبات -->
+    <button onclick="showList('groups')" title="قروبات واتساب"
+       style="background-color: white; border-radius: 50%; width: 45px; height: 45px;
+              display: flex; align-items: center; justify-content: center; border:none; cursor:pointer; padding:5px;
+              box-shadow: 0 2px 5px rgba(0,0,0,0.3);">
+      <img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" style="width:25px; height:25px;">
+    </button>
+
+    <!-- إيميل -->
+    <button onclick="showList('email')" title="إيميلات"
+       style="background-color: white; border-radius: 50%; width: 45px; height: 45px;
+              display: flex; align-items: center; justify-content: center; border:none; cursor:pointer; padding:5px;
+              box-shadow: 0 2px 5px rgba(0,0,0,0.3);">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" style="width:25px; height:25px;">
+    </button>
+  </div>
+</div>
+
+<!-- القائمة المنبثقة -->
+<div id="listPopup" 
+     style="display:none; position:fixed; bottom:80px; left:20px; background:#fff; border-radius:10px; padding:10px; box-shadow:0 2px 8px rgba(0,0,0,0.3); z-index:10000; font-family:Tahoma; font-size:14px;">
+  <strong id="listTitle"></strong>
+  <ul id="listItems" style="list-style:none; padding:0; margin:10px 0 0 0;"></ul>
+  <button onclick="closeList()" style="background:#ccc; border:none; padding:5px 10px; border-radius:5px; cursor:pointer;">إغلاق</button>
+</div>
+
+<script>
+  function toggleButtons(){
+    const sub = document.getElementById("subButtons");
+    sub.style.display = (sub.style.display === "none" || sub.style.display === "") ? "flex" : "none";
+  }
+
+  const whatsappNumbers = [
+    {name: "م.عبدالمجيد المنيعي - مسؤول البوابة", number: "966538044789"},
+    {name: "م.محمد منير - مشرف قروبات المحاسبة", number: "966545237384"}
+  ];
+
+  const whatsappGroups = [
+    {name: "قروب طلاب المحاسبة", link: "https://chat.whatsapp.com/JetTf2RUhCsER6mqXpIde3"},
+    {name: "قروب ادارة البوابة", link: "https://chat.whatsapp.com/JetTf2RUhCsER6mqXpIde3"}
+  ];
+
+  const emails = [
+    {name: "إيميل رئيس القسم", email: "abdalmged7129@gmail.com"},
+    {name: "إيميل الدعم", email: "abdalmged71298@gmail.com"}
+  ];
+
+  function showList(type){
+    const popup = document.getElementById("listPopup");
+    const title = document.getElementById("listTitle");
+    const list = document.getElementById("listItems");
+    list.innerHTML = "";
+
+    let items = [];
+    if(type === "whatsapp"){
+      title.innerText = "اختر رقم واتساب:";
+      items = whatsappNumbers.map(x => `<li><a href="https://wa.me/${x.number}" target="_blank" style="text-decoration:none; color:#000;">${x.name}</a></li>`);
+    } else if(type === "groups"){
+      title.innerText = "اختر قروب واتساب:";
+      items = whatsappGroups.map(x => `<li><a href="${x.link}" target="_blank" style="text-decoration:none; color:#000;">${x.name}</a></li>`);
+    } else if(type === "email"){
+      title.innerText = "اختر بريد إلكتروني:";
+      items = emails.map(x => `<li><a href="mailto:${x.email}" target="_blank" style="text-decoration:none; color:#000;">${x.name}</a></li>`);
+    }
+
+    list.innerHTML = items.join("");
+    popup.style.display = "block";
+  }
+
+  function closeList(){
+    document.getElementById("listPopup").style.display = "none";
+  }
+</script>
+ 
+
+<!-- شريط العد التنازلي -->
+<div style="width: 100%; background: white; padding: 6px 0; text-align: center; 
+            font-size: 12px; color: black; border-top:1px solid #ccc; margin-top: 20px;">
+  <a href="https://waqat-aljamieah.blogspot.com/?m=1" target="_blank" 
+     style="color: black; text-decoration: none; font-weight: bold;">
+    ⏳ العد التنازلي للاختبارات - السداد - المحاضرات - التكاليف
+  </a>
+</div>
+
+
+
