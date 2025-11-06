@@ -280,16 +280,16 @@
       display: none !important;
     }
 
-    hr.sep {
-      border: none;
-      border-top: 1px solid #eee;
-      margin: 12px 0;
-    }
-section {
-      padding: 20px;
-      text-align: center;
-    }
+   hr.sep {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 12px 0;
+}
 
+section {
+  padding: 20px;
+  text-align: center;
+}
     @media(max-width:900px) {
       .container {
         flex-direction: column;
@@ -305,7 +305,7 @@ section {
 
 
  <section style="display: flex; align-items: center; justify-content: center; gap: 10px; padding: 10px; background-color: #f9f9f9; border-bottom: 1px solid #ddd;">
-<img src="https://i.imgur.com/UwPMIAg.png="شعار الجامعة" style="width:100px; height:auto;">
+<img src="https://i.imgur.com/UwPMIAg.png" alt="شعار الجامعة" style="width:100px; height:auto;">
 
   <h1 style="font-size: 16px; margin: 0;">بوابة دليل الطالب قسم المحاسبة</h1>
 </section>
@@ -317,12 +317,15 @@ section {
     <div id="loginForm">
       <div class="field">
         <label for="user">اسم المستخدم</label>
-        <input id="user" autocomplete="username" />
+       <input id="user" name="username" autocomplete="username" />
+
+
       </div>
 
       <div class="field">
         <label for="pwd">كلمة المرور</label>
-        <input id="pwd" type="password" autocomplete="current-password" />
+    <input id="pwd" name="password" type="password" autocomplete="current-password" />
+
       </div>
 
       <button id="loginBtn" style="width:100%;">دخول</button>
@@ -426,13 +429,13 @@ const data = {
         {label:'المحاضرة الثانية 2025', url:'https://t.me/Abdalmgef7129/68'}
       ],
       books:[
-        {label:'كتاب مبادئ المحاسبة 1 - ', url:'https://drive.google.com/open?id=1hNg6XQ8GcyzdVAxjCfFf6KE8Nq9N0kfK&usp=drive_fs=drivesdk'},
-        {label:'كتاب مبادئ المحاسبة 1 محاضرات - ', url:'https://drive.google.com/file/d/1P8OTvY0NznAgg6PFBEp6dUuQSErfeV9H/view?usp=drivesdk=drivesdk'}
+        {label:'كتاب مبادئ المحاسبة 1 - ', url:'https://drive.google.com/open?id=1hNg6XQ8GcyzdVAxjCfFf6KE8Nq9N0kfK&usp=drivesdk'},
+        {label:'كتاب مبادئ المحاسبة 1 محاضرات - ', url:'https://drive.google.com/file/d/1P8OTvY0NznAgg6PFBEp6dUuQSErfeV9H/view?usp=drivesdk'}
 
       ],
       models:[
-        {label:'نماذج الامتحانات (بشير الاهدل)', url:'https://drive.google.com/open?id=106Mks4aiMVCEARC9fcEOwclIWR7JGFCe&usp=drive_fs'},
-        {label:'تجميع مقالي (جار الله)', url:'https://drive.google.com/open?id=1ECPhRjiUp3VSQdNXGLGG74n0LpRPjCrE&usp=drive_fs=drivesdk'}
+        {label:'نماذج الامتحانات (بشير الاهدل)', url:'https://drive.google.com/open?id=106Mks4aiMVCEARC9fcEOwclIWR7JGFCe&usp=drivesdk'},
+        {label:'تجميع مقالي (جار الله)', url:'https://drive.google.com/open?id=1ECPhRjiUp3VSQdNXGLGG74n0LpRPjCrE&usp=drivesdk'}
     ],
       summaries:[],
       Telegram:[
@@ -458,7 +461,7 @@ const data = {
 {label:'الاستفادة من كون الاختبار مقاليًا، فهو يمنح فرصة لجمع درجات من خطوات الحل.'},
 {label:'🟠المحذوف من الكتاب هي الوحدة السادسه فقط'},
 {label:'✅ تنويه:'},
-{label:'الاختبار يحتاج انه تدرب على مسائل اكثر من مره لكي تثبت المعلومه'}]},// باقي مواد المتطلبات الكلية (بدون روابط الآن)
+{label:'الاختبار يحتاج انه تدرب على مسائل اكثر من مره لكي تثبت المعلومه'}]},
 
 {id:'acc2', title:'مبادئ المحاسبة 2(4 ساعات)', 
 videos:[       
@@ -471,15 +474,15 @@ videos:[
 ], 
 
 books:[
-       {label:'كتاب مبادئ المحاسبة 2', url:'https://drive.google.com/open?id=1NXdzgeIGtcIWTEr71GCeUJIkXfSmfUxX&usp=drive_fs=drive_fs=drivesdk'}], 
+       {label:'كتاب مبادئ المحاسبة 2', url:'https://drive.google.com/open?id=1NXdzgeIGtcIWTEr71GCeUJIkXfSmfUxX&usp=drivesdk'}], 
 models:[
-        {label:'محاسبة 2 النظري 🫶🏼دعواتكم - ', url:'https://drive.google.com/open?id=1SUuSZ7eO4LeOfzjiHTe3muJJX2rC5FkX&usp=drive_fs=drivesdk'},
+        {label:'محاسبة 2 النظري 🫶🏼دعواتكم - ', url:'https://drive.google.com/open?id=1SUuSZ7eO4LeOfzjiHTe3muJJX2rC5FkX&usp=drivesdk'},
         {label: 'اختبر نفسك نماذج النظري - ',url: 'https://docs.google.com/forms/d/e/1FAIpQLSfY1ABSc1qAQQ6Tg1Y2vAA4mgrzQNgUITwL792Hb95dbddgOA/viewform?usp=drivesdk'},
-           {label:'تجميع_المسائل_الحسابيه_حُسن_علي_٢معدل', url:'https://drive.google.com/open?id=1__fOGim2gysRw9ZzUGQ_6l0MnEaVpNvB&usp=drive_fs=drivesdk'}], 
+           {label:'تجميع_المسائل_الحسابيه_حُسن_علي_٢معدل', url:'https://drive.google.com/open?id=1__fOGim2gysRw9ZzUGQ_6l0MnEaVpNvB&usp=drivesdk'}], 
 summaries:[
-           {label:'بيان_الأثر_في_الأرباح_والخسائر_والميزانية_العمومية^سمية_الوجيه^', url:'https://drive.google.com/open?id=1gQL9_mVFmBqG7t_1V-cWSP-YPxG4JZJQ&usp=drive_fs=drive_fs'},
-           {label:'شرح مُبسط للمخصصات (مريـــــم )', url:'https://drive.google.com/open?id=1yKNVKFdrY3BlB990EfT3d7MJvIsOpRCj&usp=drive_fs=drive_fs'},
-           {label:'ملخص للمصروفات والإيرادات ولد أنعم ', url:'https://drive.google.com/open?id=1F5rERyG6S0j4A6w-4_C6CxL7KSTeWCZx&usp=drive_fs=drivesdk'}], 
+           {label:'بيان_الأثر_في_الأرباح_والخسائر_والميزانية_العمومية^سمية_الوجيه^', url:'https://drive.google.com/open?id=1gQL9_mVFmBqG7t_1V-cWSP-YPxG4JZJQ&usp==drivesdk'},
+           {label:'شرح مُبسط للمخصصات (مريـــــم )', url:'https://drive.google.com/open?id=1yKNVKFdrY3BlB990EfT3d7MJvIsOpRCj&usp=drivesdk'},
+           {label:'ملخص للمصروفات والإيرادات ولد أنعم ', url:'https://drive.google.com/open?id=1F5rERyG6S0j4A6w-4_C6CxL7KSTeWCZx&usp=drivesdk'}], 
 Telegram:[
         {label:'قناة حسن', url:'https://t.me/+eRk1uNqUcIRlMTlk'},], 
 news:[
@@ -498,19 +501,19 @@ news:[
 {label:'الوحدة السابعة: الطرق المحاسبية من صـ (375) إلى صـ (462).'}]},
 
     {id:'busi', title:'مبادئ إدارة الأعمال(3 ساعات)', videos:[
-        {label:'المحاضره 1 ', url:'https://youtu.be/1IKoXXxcjdc?si=4kCA-YR9Cmkm-83l=drivesdk'},
-        {label:'المحاضره 2 ', url:'https://youtu.be/1UDINZZtG5o?si=FSMIfNq6czhxW5lI=drivesdk'},
-        {label:'المحاضرة 3', url:'https://youtu.be/vrPLjycceQY?si=HbojYjzk_XrnNFa8=drivesdk'},
-        {label:'المحاضرة 4', url:'https://youtu.be/Od9r_32sfR8?si=zoN4lS4Q0mIL2Q2u=drivesdk'},
-        {label:'قناة محاضرات متكامله لدكتوره ينصح الاعتماد عليها اكثر ', url:'https://youtube.com/playlist?list=PLzLmjaQB3jxbdHbRUY5tEKgG13niCAgeS&si=cAkOcgPJIrhy6_Fc=drivesdk'}], 
+        {label:'المحاضره 1 ', url:'https://youtu.be/1IKoXXxcjdc'},
+        {label:'المحاضره 2 ', url:'https://youtu.be/1UDINZZtG5o'},
+        {label:'المحاضرة 3', url:'https://youtu.be/vrPLjycceQY'},
+        {label:'المحاضرة 4', url:'https://youtu.be/Od9r_32sfR8'},
+        {label:'قائمة محاضرات ينصح بالعتماد عليها اكثر', url:'https://www.youtube.com/playlist?list=PLzLmjaQB3jxbdHbRUY5tEKgG13niCAgeS'},], 
 books:[
-       {label:'كتاب ادارة الاعمال ', url:'https://drive.google.com/open?id=1VzeqAKuSnZPExsBq-y-ZGD1eSyPCS0Fn&usp=drive_fs=drivesdk'}],
+       {label:'كتاب ادارة الاعمال ', url:'https://drive.google.com/open?id=1VzeqAKuSnZPExsBq-y-ZGD1eSyPCS0Fn&usp=drivesdk'}],
  models:[
-        {label:'��تعديل_نموذج_بشير_اداره_اعمال_3_وعد_�_1', url:'https://drive.google.com/open?id=1z2Kmtln0tfzOFr0zq0LTUMf1PQPxEFks&usp=drive_fs=drivesdk'},
-        {label:'تجميع مقالي مبادئ اداره الاعمال', url:'https://drive.google.com/open?id=1wgpKAMrmOZqUxPSWFjrjxDQHOtDROHgq&usp=drive_fs=drivesdk'},
-        {label:'مقالي_ادارة_الأعمال[1]', url:'https://drive.google.com/open?id=1tbb77cHqgz9fY3eVVahFfcS5_iJTMqdt&usp=drive_fs=drivesdk'}],
+        {label:'��تعديل_نموذج_بشير_اداره_اعمال_3_وعد_�_1', url:'https://drive.google.com/open?id=1z2Kmtln0tfzOFr0zq0LTUMf1PQPxEFks&usp=drivesdk'},
+        {label:'تجميع مقالي مبادئ اداره الاعمال', url:'https://drive.google.com/open?id=1wgpKAMrmOZqUxPSWFjrjxDQHOtDROHgq&usp=drivesdk'},
+        {label:'مقالي_ادارة_الأعمال[1]', url:'https://drive.google.com/open?id=1tbb77cHqgz9fY3eVVahFfcS5_iJTMqdt&usp=drivesdk'}],
  summaries:[
-           {label:'مقالي_ادارة_الأعمال[1]', url:'https://drive.google.com/open?id=1_4gR-jmB27syW-2DnmVYCfIIhEjunYpb&usp=drive_fs=drivesdk'}],
+           {label:'مقالي_ادارة_الأعمال[1]', url:'https://drive.google.com/open?id=1_4gR-jmB27syW-2DnmVYCfIIhEjunYpb&usp=drivesdk'}],
  Telegram:[
           {label:'قناة مبادئ ادارة الاعمال 2023', url:'https://t.me/+yR1JvqJy_9AxZmRk'},],
  news:[
@@ -532,22 +535,22 @@ books:[
 
  {id:'eco_micro', title:'مبادئ الاقتصاد الجزئي(3 ساعات)', 
 videos:[
-        {label:'قناة صادق', url:'https://youtube.com/playlist?list=PL8436LuIZoAqWmdpm94zjmiZvj1n0X4e3&si=SGowjbZ_X-mNCtd0=drivesdk'},
+        {label:'قناة صادق', url:'https://www.youtube.com/playlist?list=PL8436LuIZoAqWmdpm94zjmiZvj1n0X4e3'},
         {label:'شرح الملخص', url:'https://www.youtube.com/playlist?list=PLzLmjaQB3jxYMwmTHTwGmBeXf0o_H-9kr'},]
 , books:[
-        {label:'كتاب مبادئ الاقتصاد الجزئي ', url:'https://drive.google.com/open?id=1oaV2BmNBMRTX0aaf9nOfMvOIRU78M7NH&usp=drive_fs=drivesdk'}]
+        {label:'كتاب مبادئ الاقتصاد الجزئي ', url:'https://drive.google.com/open?id=1oaV2BmNBMRTX0aaf9nOfMvOIRU78M7NH&usp=drivesdk'}]
 , models:[
-        {label:'رسم إقتصاد جزئي (سمية مرزوق) 🕊', url:'https://drive.google.com/open?id=1BXqLT6B96kaxy3IUTgP3yaxCAT5paLCh&usp=drive_fs=drivesdk'},
-        {label:'معدل مسائل اقتصاد جزئي ليلى', url:'https://drive.google.com/open?id=1FtRsf1TtZGCxM7qgXsvkEDqCM1WpGjru&usp=drive_fs=drivesdk'},
-        {label:'نماذج محلولة إقتصاد جزئي', url:'https://drive.google.com/open?id=1eLttWBFS2v-rNURTa1hNb_lGSMMkYZdU&usp=drive_fs=drivesdk'},
-        {label:'معدل_الاقتصاد_الجزئي_نُهى_دحان', url:'https://drive.google.com/open?id=1dpUTZB4DyYcQUt3VJKbuKrLMHnqzrR9q&usp=drive_fs=drivesdk'}]
+        {label:'رسم إقتصاد جزئي (سمية مرزوق) 🕊', url:'https://drive.google.com/open?id=1BXqLT6B96kaxy3IUTgP3yaxCAT5paLCh&usp=drivesdk'},
+        {label:'معدل مسائل اقتصاد جزئي ليلى', url:'https://drive.google.com/open?id=1FtRsf1TtZGCxM7qgXsvkEDqCM1WpGjru&usp=drivesdk'},
+        {label:'نماذج محلولة إقتصاد جزئي', url:'https://drive.google.com/open?id=1eLttWBFS2v-rNURTa1hNb_lGSMMkYZdU&usp=drivesdk'},
+        {label:'معدل_الاقتصاد_الجزئي_نُهى_دحان', url:'https://drive.google.com/open?id=1dpUTZB4DyYcQUt3VJKbuKrLMHnqzrR9q&usp=drivesdk'}]
 , summaries:[
-            {label:'ملف_مدمج_لملخص_الاقتصاد_الجزئي_pdf_1', url:'https://drive.google.com/open?id=19AEmBAy_QvTxP5gaHCSfLrPdMELCvz9j&usp=drive_fs=drivesdk'}]
+            {label:'ملف_مدمج_لملخص_الاقتصاد_الجزئي_pdf_1', url:'https://drive.google.com/open?id=19AEmBAy_QvTxP5gaHCSfLrPdMELCvz9j&usp=drivesdk'}]
 , Telegram:[
             {label:'قناة ريم', url:'https://t.me/reem_53494'},
             {label:'قناة ولد انعم', url:'https://t.me/binanam2003'},
             {label:'هذي القناة فيها تجميعات الجديدة', url:'https://t.me/aiqtisad2025'},
-            {label:'قناة ندى خاصة بالبنات تواصلي مع المشرفات لدخول القناة ', url:''},]
+            {label:'قناة ندى خاصة بالبنات – الرابط يُرسل بعد التواصل مع المشرفات', url:null},]
 , news:[
        {label:'🟠 نوع المادة:'},
 {label:'مقالية.'},
@@ -574,19 +577,19 @@ videos:[
 
     {id:'eco_macro', title:'مبادئ الاقتصاد الكلي(3 ساعات)', 
 videos:[
-        {label:'المحاضرة 1⃣', url:'https://youtu.be/mTpKbTrb8Q0?si=Ib8OBuLgZq8UPbDJ'},
-        {label:'المحاضرة 2⃣', url:'https://youtu.be/MBEdm3-l5zg?si=sFP8WDQVRzLnu3aM'},
-        {label:'المحاضرة 3⃣', url:'https://youtu.be/Z87RjhCBRp0?si=B41oQRmtmlYQlkNo'},
-        {label:'المحاضرة 4⃣', url:'https://youtu.be/NAJ4i8svQC8?si=fOILqCfy96iUOMlW'},]
+        {label:'المحاضرة 1⃣', url:'https://youtu.be/mTpKbTrb8Q0'},
+        {label:'المحاضرة 2⃣', url:'https://youtu.be/MBEdm3-l5zg'},
+        {label:'المحاضرة 3⃣', url:'https://youtu.be/Z87RjhCBRp0'},
+        {label:'المحاضرة 4⃣', url:'https://youtu.be/NAJ4i8svQC8'},]
 , books:[
-        {label:'كتاب مبادئ الاقتصاد الكلي ', url:'https://drive.google.com/open?id=1Z7zWxlXGrIxwd3jVh66ZUPZjY8WgFRsn&usp=drive_fs=drivesdk'} ]
+        {label:'كتاب مبادئ الاقتصاد الكلي ', url:'https://drive.google.com/open?id=1Z7zWxlXGrIxwd3jVh66ZUPZjY8WgFRsn&usp=drivesdk'} ]
 , models:[
-         {label:'��قوانين_مع_مسائل_اقتصاد_كلي_شامل_230524_140901� ', url:'https://drive.google.com/open?id=1mF9hCAFwug6TmoW1D0wjZuiwnIAfN98Y&usp=drive_fs=drivesdk'},
-         {label:'نموذج النظري الاقتصاد الكليpdf0 ', url:'https://drive.google.com/open?id=1qGtcrCLvVlWJv2wkc9qo6JrSkeSS322p&usp=drive_fs=drivesdk'},
-         {label:'نموذج النظري الاقتصاد الكلي ^Nاختبر نفسك', url:'https://drive.google.com/open?id=1Hwu-NBroWyyUu5ikNH0aUcoRywhxu0QC&usp=drive_fs=drivesdk'},]
+         {label:'��قوانين_مع_مسائل_اقتصاد_كلي_شامل_230524_140901� ', url:'https://drive.google.com/open?id=1mF9hCAFwug6TmoW1D0wjZuiwnIAfN98Y&usp=drivesdk'},
+         {label:'نموذج النظري الاقتصاد الكليpdf0 ', url:'https://drive.google.com/open?id=1qGtcrCLvVlWJv2wkc9qo6JrSkeSS322p&usp=drivesdk'},
+         {label:'نموذج النظري الاقتصاد الكلي ^Nاختبر نفسك', url:'https://drive.google.com/open?id=1Hwu-NBroWyyUu5ikNH0aUcoRywhxu0QC&usp=drivesdk'},]
 , summaries:[
-         {label:'حسابي الاقتصاد الكلي1.', url:'https://drive.google.com/open?id=1A8IKVxdtbjst9fHsiZRu_mx-aNk3tmAL&usp=drive_fs=drivesdk'},
-         {label:'مقالي كلي ', url:'https://drive.google.com/open?id=1oLIOJBAlOVPJC83y4Y5-3Y6m5zzUXYK8&usp=drive_fs=drivesdk'},
+         {label:'حسابي الاقتصاد الكلي1.', url:'https://drive.google.com/open?id=1A8IKVxdtbjst9fHsiZRu_mx-aNk3tmAL&usp=drivesdk'},
+         {label:'مقالي كلي ', url:'https://drive.google.com/open?id=1oLIOJBAlOVPJC83y4Y5-3Y6m5zzUXYK8&usp=drivesdk'},
          {label:'📊 ملخص مبادئ الاقتصاد الكلي', url:'https://summary-of-macroeconomic-principles1.netlify.app/'}]
 , Telegram:[
             {label:'شرح الاقتصاد الكلي 🤍.', url:'https://t.me/rymy2023'},
@@ -618,13 +621,13 @@ videos:[
          {label:'قائمة المحاضرات 2⃣', url:'https://www.youtube.com/watch?v=ofZaOxXqong&list=PLoURjA1UEuTwoLFDEjjc08NHbv7Q5DghC'}
         ]
 , books:[
-         {label:'كتاب القانون التجاري ', url:'https://drive.google.com/open?id=1540gJvM1WrcIx7Nt_bJ5aVZf7bueYbp-&usp=drive_fs=drivesdk'}]
+         {label:'كتاب القانون التجاري ', url:'https://drive.google.com/open?id=1540gJvM1WrcIx7Nt_bJ5aVZf7bueYbp&usp=drivesdk'}]
 , models:[
-         {label:'اختبرنفسك_قانون تجاري_محمد الحاشدي 2025 ', url:'https://drive.google.com/open?id=1Ie3R341Ysk5KUQmRJTQNnmDI98ZJsdjB&usp=drive_fs=drivesdk'},
-         {label:'شامل_قانون تجاري_محمدالحاشدي 2025', url:'https://drive.google.com/open?id=1uqmAwdYqJdXyBQ13xCsrwAAHf0jrlBek&usp=drive_fs=drivesdk'}]
+         {label:'اختبرنفسك_قانون تجاري_محمد الحاشدي 2025 ', url:'https://drive.google.com/open?id=1Ie3R341Ysk5KUQmRJTQNnmDI98ZJsdjB&usp=drivesdk'},
+         {label:'شامل_قانون تجاري_محمدالحاشدي 2025', url:'https://drive.google.com/open?id=1uqmAwdYqJdXyBQ13xCsrwAAHf0jrlBek&usp=drivesdk'}]
 , summaries:[
-             {label:'ملخص القانون التجاري ', url:'https://drive.google.com/open?id=1QH8QcH9elvlTLDnNKFhhA3SpZSfKkiBN&usp=drive_fs=drivesdk'},
-             {label:'AI - مقالي قانون تجاري_محمدالحاشدي ', url:'https://drive.google.com/open?id=1lrHxes_qvYnZzeCTnHSBYdRh3lLfXkIs&usp=drive_fs=drivesdk'}]
+             {label:'ملخص القانون التجاري ', url:'https://drive.google.com/open?id=1QH8QcH9elvlTLDnNKFhhA3SpZSfKkiBN&usp=drivesdk'},
+             {label:'AI - مقالي قانون تجاري_محمدالحاشدي ', url:'https://drive.google.com/open?id=1lrHxes_qvYnZzeCTnHSBYdRh3lLfXkIs&usp=drivesdk'}]
 , Telegram:[
            {label:'تجميعات قانون تجاري.', url:'https://t.me/+LuHJkIJV5CJiNTRk'}]
 , news:[
@@ -657,18 +660,18 @@ videos:[
 
     {id:'marketing', title:'مبادئ التسويق(3 ساعات)',
  videos:[
-        {label:'المحاضرة الاولى', url:'https://youtu.be/MpMXsW1z5MM?si=h2Pcldw9PyedOPJm'},
-         {label:'المحاضرة الثانية', url:'https://youtu.be/Z3HV6s8ajCI?si=1it7WSVJVeXID-Z4'},
-         {label:'المحاضرة  الثالثه', url:'https://youtu.be/itoSMTcD5S8?si=PoPt22PABkwh_vId'},
-         {label:'المحاضرة الرابعة', url:'https://youtu.be/WPRMuUkA0To?si=Gr_EiZuhG4j-9-vj'}],
+        {label:'المحاضرة الاولى', url:'https://youtu.be/MpMXsW1z5MM'},
+         {label:'المحاضرة الثانية', url:'https://youtu.be/Z3HV6s8ajCI'},
+         {label:'المحاضرة  الثالثه', url:'https://youtu.be/itoSMTcD5S8'},
+         {label:'المحاضرة الرابعة', url:'https://youtu.be/WPRMuUkA0To'}],
  books:[
-        {label:'مبادئ التسويق ', url:'https://drive.google.com/open?id=1_X3tp78xpHcLuf5jY7VfSqbYic2t876C&usp=drive_fs=drivesdk'}],
+        {label:'مبادئ التسويق ', url:'https://drive.google.com/open?id=1_X3tp78xpHcLuf5jY7VfSqbYic2t876C&usp=drivesdk'}],
  models:[
-        {label:'مبادئ التسويق _ تسلسلي _ نسخة 3 (2) ', url:'https://drive.google.com/open?id=19n8lQSRralhdKwtNMwlazItPEkjQEokw&usp=drive_fs=drivesdk'},
-        {label:'�الخطا في ملف مبادئ التسويق 1', url:'https://drive.google.com/open?id=1lzLFcVBALcUrPQ6P_8FEjoYDJstv83Vm&usp=drive_fs=drivesdk'},
-        {label:'تجميع_مقالي_مبادئ_تسويق_2024_جيهان_وسماح', url:'https://drive.google.com/open?id=1MFZ8WfLfToXrx1vIRWKUnWGtalxINZG_&usp=drive_fs=drivesdk'}],
+        {label:'مبادئ التسويق _ تسلسلي _ نسخة 3 (2) ', url:'https://drive.google.com/open?id=19n8lQSRralhdKwtNMwlazItPEkjQEokw&usp=drivesdk'},
+        {label:'�الخطا في ملف مبادئ التسويق 1', url:'https://drive.google.com/open?id=1lzLFcVBALcUrPQ6P_8FEjoYDJstv83Vm&usp=drivesdk'},
+        {label:'تجميع_مقالي_مبادئ_تسويق_2024_جيهان_وسماح', url:'https://drive.google.com/open?id=1MFZ8WfLfToXrx1vIRWKUnWGtalxINZG_&usp=drivesdk'}],
  summaries:[
-         {label:'ملخص 1مبادئ التسويق ', url:'https://drive.google.com/open?id=10cW3jqTwCrXUditH69v0ZScETiI72c1O&usp=drive_fs=drivesdk'}],
+         {label:'ملخص 1مبادئ التسويق ', url:'https://drive.google.com/open?id=10cW3jqTwCrXUditH69v0ZScETiI72c1O&usp=drivesdk'}],
  Telegram:[
           {label:'كل مايخص مادة مبادئ التسويق', url:'https://t.me/+aZalQFpnDl03ZDI0'}],
  news:[
@@ -689,15 +692,15 @@ videos:[
 
     {id:'stat', title:'إحصاء تطبيقي(3 ساعات)', 
 videos:[
-       {label:'قائمة المحاضرات 1⃣  صادق جزيلان', url:'https://www.youtube.com/watch?v=dp_6K-VAP38&list=PL8436LuIZoAro9rStaSYX6EdrqLPVJ4D8'},
+       {label:'قائمة المحاضرات 1⃣  صادق جزيلان', url:'https://www.youtube.com/playlist?list=PL8436LuIZoAro9rStaSYX6EdrqLPVJ4D8'},
          {label:'قائمة المحاضرات 2⃣ محاضرات الجامعة', url:'https://youtube.com/playlist?list=PLzLmjaQB3jxaG154iJ0rg7qvhGSQW55da'}],
  books:[
-       {label:'الإحصاء التطبيقي (معدل) ', url:'https://drive.google.com/open?id=14QzfkfzXFVAyPg4cNWdkcvBOER8KOlI5&usp=drive_fs=drivesdk'}],
+       {label:'الإحصاء التطبيقي (معدل) ', url:'https://drive.google.com/open?id=14QzfkfzXFVAyPg4cNWdkcvBOER8KOlI5&usp=drivesdk'}],
  models:[
-         {label:'نموذج حلول نُهى دحان _معدل_2024 ', url:'https://drive.google.com/open?id=1O7dNQJP_zdKKxpK_dQhUzYsZZl67u8NW&usp=drive_fs=drivesdk'}],
+         {label:'نموذج حلول نُهى دحان _معدل_2024 ', url:'https://drive.google.com/open?id=1O7dNQJP_zdKKxpK_dQhUzYsZZl67u8NW&usp=drivesdk'}],
  summaries:[
-            {label:'قولنين الإحصاء ', url:'https://drive.google.com/open?id=1mUH6B93Mmw_7DseQzyot6GSegiF_Bi3B&usp=drive_fs=drivesdk'},
-            {label:'ملخص الاحصاء ( كامل )_240114_144937 ', url:'https://drive.google.com/open?id=1V6UjKNemsiB9BhMhyD96RIX9yB7qKuPe&usp=drive_fs=drivesdk'}],
+            {label:'قولنين الإحصاء ', url:'https://drive.google.com/open?id=1mUH6B93Mmw_7DseQzyot6GSegiF_Bi3B&usp=drivesdk'},
+            {label:'ملخص الاحصاء ( كامل )_240114_144937 ', url:'https://drive.google.com/open?id=1V6UjKNemsiB9BhMhyD96RIX9yB7qKuPe&usp=drivesdk'}],
  Telegram:[
            {label:'شرح تأسيسي لمادة الإحصاء / القسم الحسابي قناة أميرة.', url:'https://t.me/+taasg_HN8q5hZGE0'},
            {label:'▪️قناة التليجرام الأساسي للمادة :', url:'https://t.me/llkp09'},
@@ -746,15 +749,15 @@ videos:[
 
     {id:'fin_man', title:'الإدارة المالية(3 ساعات)'
 , videos:[
-          {label:'قائمة المحاضرات 1⃣', url:'https://drive.google.com/folderview?id=1TlksTBaPWPq-9MrAcn7_46u0kT_7-psM'},
+          {label:'قائمة المحاضرات 1⃣', url:'https://drive.google.com/drive/folders/1TlksTBaPWPq-9MrAcn7_46u0kT_7-psM?usp=drivesdk'},
          {label:'قائمة المحاضرات 2⃣', url:'https://youtube.com/playlist?list=PLoURjA1UEuTy4p0a979bqKpo3s2QG05uY'}]
 , books:[
-         {label:'كتاب الإدارة المالية ', url:'https://drive.google.com/open?id=1bZDTAVt1O-WZJe8tNQYAJUCIY-ZXGkag&usp=drive_fs=drivesdk'}]
+         {label:'كتاب الإدارة المالية ', url:'https://drive.google.com/open?id=1bZDTAVt1O-WZJe8tNQYAJUCIY-ZXGkag&usp=drivesdk'}]
 , models:[
-        {label:'اختبر نفسك_اداره ماليه_نظري', url:'https://drive.google.com/open?id=1FhsE2xVROQU8bLnP8WYGUgdg0H5MQP5g&usp=drive_fs=drivesdk'},
-        {label:'حسابي (إدارة ماليه)', url:'https://drive.google.com/open?id=1o5jTExPhiR405bu5zErGImftKe8_ahhO&usp=drive_fs=drivesdk'},
-        {label:'تجميع_أسئلة_مادة_الإدارة_المالية_النظري_آخر_تع_241121_232646 ', url:'https://drive.google.com/open?id=1nqGauxY0TqvX8xD9BvDHa5N1fr3OMnd8&usp=drive_fs=drivesdk'},
-        {label:'قوانين_الإدارة_المالية_للنموذج_الشامل_سمية_الوجيه ', url:'https://drive.google.com/open?id=1PY5gHDU_I6Gs3iqJa6KMlW80KeGQTqqe&usp=drive_fs=drivesdk'}]
+        {label:'اختبر نفسك_اداره ماليه_نظري', url:'https://drive.google.com/open?id=1FhsE2xVROQU8bLnP8WYGUgdg0H5MQP5g&usp=drivesdk'},
+        {label:'حسابي (إدارة ماليه)', url:'https://drive.google.com/open?id=1o5jTExPhiR405bu5zErGImftKe8_ahhO&usp=drivesdk'},
+        {label:'تجميع_أسئلة_مادة_الإدارة_المالية_النظري_آخر_تعديل ', url:'https://drive.google.com/open?id=1nqGauxY0TqvX8xD9BvDHa5N1fr3OMnd8&usp=drivesdk'},
+        {label:'قوانين_الإدارة_المالية_للنموذج_الشامل_سمية_الوجيه ', url:'https://drive.google.com/open?id=1PY5gHDU_I6Gs3iqJa6KMlW80KeGQTqqe&usp=drivesdk'}]
 , summaries:[]
 , Telegram:[
            {label:'شرح مسائل الادارة المالية.', url:'https://t.me/+QLI85Gvkfa41MTk8'},
@@ -792,16 +795,16 @@ videos:[
     {id:'purch', title:'إدارة المشتريات والمخازن(3 ساعات)',
  videos:[
          {label:'شرح الاستاذ صادق نموذج النظري والحسابي قائمة المحاضرات 1⃣', url:'https://youtube.com/playlist?list=PL8436LuIZoArx3JFWLL0LX84NEgvPucTo'},
-         {label:'محاضرات مقرر إدارة مشتريات ومخازن قائمة المحاضرات 2⃣', url:'https://youtube.com/playlist?list=PLoURjA1UEuTw-Mgy3XEJuh7cQYrL3o3QJ&si=_y8kKV8b6ucRwH4V'}],
+         {label:'محاضرات مقرر إدارة مشتريات ومخازن قائمة المحاضرات 2⃣', url:'https://youtube.com/playlist?list=PLoURjA1UEuTw-Mgy3XEJuh7cQYrL3o3QJ'}],
  books:[
-        {label:'كتاب إدارة المشتريات والمخازن ', url:'https://drive.google.com/open?id=1618ieY84AqfxzXLPfwwYL4xUpcdzb4Jg&usp=drive_fs=drivesdk'}],
+        {label:'كتاب إدارة المشتريات والمخازن ', url:'https://drive.google.com/open?id=1618ieY84AqfxzXLPfwwYL4xUpcdzb4Jg&usp=drivesdk'}],
  models:[
-        {label:'تعديل_نموذج_إدارة_المشتريات_والمخازن_2024_20253 (1)', url:'https://drive.google.com/open?id=1pLjiBwh-D1Do8MCViEtZAxsmoUx3MvDg&usp=drive_fs=drivesdk'},
-            {label:'��مقالي مشتريات ومخازن (khawlah) � ', url:'https://drive.google.com/open?id=1X9bQSpQFzknUoOPF6RRVA_fqViucybJw&usp=drive_fs=drive_fs=drivesdk'}],
+        {label:'تعديل_نموذج_إدارة_المشتريات_والمخازن_2024_20253 (1)', url:'https://drive.google.com/open?id=1pLjiBwh-D1Do8MCViEtZAxsmoUx3MvDg&usp=drive_fs'},
+            {label:'��مقالي مشتريات ومخازن (khawlah) � ', url:'https://drive.google.com/open?id=1X9bQSpQFzknUoOPF6RRVA_fqViucybJw&usp=drive_fs'}],
  summaries:[
-            {label:'مشتريات ومخازن حسابي وحيد سميرة ', url:'https://drive.google.com/open?id=1NIXh4g1_ArDYLHY_zYI4WE1fHS6_i2L2&usp=drive_fs=drivesdk'},
-            {label:'حسابي_متعدد_سميرة_مشتريات_ومخازن_1 ', url:'https://drive.google.com/open?id=1pgJnypMNGNjFbl2Q27d_9qAUbtmOkGdn&usp=drive_fs=drivesdk'},
-            {label:'قوانين_مشتريات_ومخازن(معدل) ', url:'https://drive.google.com/open?id=18UzGYbYnNYdXmB5bLFbkXWOdkP4OgONb&usp=drive_fs=drivesdk'}],
+            {label:'مشتريات ومخازن حسابي وحيد سميرة ', url:'https://drive.google.com/open?id=1NIXh4g1_ArDYLHY_zYI4WE1fHS6_i2L2&usp=drivesdk'},
+            {label:'حسابي_متعدد_سميرة_مشتريات_ومخازن_1 ', url:'https://drive.google.com/open?id=1pgJnypMNGNjFbl2Q27d_9qAUbtmOkGdn&usp=drivesdk'},
+            {label:'قوانين_مشتريات_ومخازن(معدل) ', url:'https://drive.google.com/open?id=18UzGYbYnNYdXmB5bLFbkXWOdkP4OgONb&usp=drivesdk'}],
 
  Telegram:[
            {label:'إدارة المشتريات والمخازن(شرح حسابي +نماذج معدله شامله).', url:'https://t.me/+CfYrK3ppmAIwMzBk'},
@@ -834,15 +837,15 @@ videos:[
 
     {id:'math_admin', title:'الرياضيات في العلوم الإدارية(3 ساعات)', 
 videos:[
-       {label:'قائمة المحاضرات ', url:'https://youtube.com/playlist?list=PLoURjA1UEuTxDAPsywE0a3Et4qpfDgQ5V&si=BEfr4vEaqHhg38HQ'}],
+       {label:'قائمة المحاضرات ', url:'https://youtube.com/playlist?list=PLoURjA1UEuTxDAPsywE0a3Et4qpfDgQ5V'}],
  books:[
-       {label:'كتاب الرياضيات في العلوم الإدارية ', url:'https://drive.google.com/open?id=164U55vSxQfVGDuM3vVARS9Rz5xf2o7I0&usp=drive_fs=drivesdk'}],
+       {label:'كتاب الرياضيات في العلوم الإدارية ', url:'https://drive.google.com/open?id=164U55vSxQfVGDuM3vVARS9Rz5xf2o7I0&usp=drivesdk'}],
  models:[
-         {label:'رياضيات(صح& خطأ)Halom ', url:'https://drive.google.com/open?id=1qKbPJd2JQl83VOWj43CW0MDBWQiGNVhO&usp=drive_fs=drivesdk'},
-         {label:'ملخصات', url:'https://drive.google.com/drive/folders/1v49-xbNpuH6tFbGkN1pgxbqwaSckz4ZM'},
-         {label:'رياضيات (الملف الشامل) •وحيد• ', url:'https://drive.google.com/open?id=1KDyAdP_ykWyZn79UloA32TknPGYg-Nan&usp=drive_fs=drivesdk'}],
+         {label:'رياضيات(صح& خطأ)Halom', url:'https://drive.google.com/open?id=1qKbPJd2JQl83VOWj43CW0MDBWQiGNVhO&usp=drivesdk'},
+         {label:'ملخصات', url:'https://drive.google.com/drive/folders/1v49-xbNpuH6tFbGkN1pgxbqwaSckz4ZM?usp=drivesdk'},
+         {label:'رياضيات (الملف الشامل) •وحيد• ', url:'https://drive.google.com/open?id=1KDyAdP_ykWyZn79UloA32TknPGYg-Nan&usp=drivesdk'}],
  summaries:[
-           {label:'ملخصات', url:'https://drive.google.com/drive/folders/1up3a54rxIMEGm7d4QpFW1T70--DcbmKV'}],
+           {label:'ملخصات', url:'https://drive.google.com/drive/folders/1up3a54rxIMEGm7d4QpFW1T70--DcbmKV?usp=drivesdk'}],
  Telegram:[
            {label:'1⃣قناة روعة (نماذج مع الشرح).', url:'https://t.me/+XGm7hs6CblIzNWJk'},
            {label:'2⃣ قناة ريم (فقط شرح خاص بالبنات)', url:'https://t.me/+iC_oH79fVxY0YWVk'},
@@ -870,15 +873,15 @@ videos:[
 
     {id:'ethics', title:'أخلاقيات منظمات الأعمال(3 ساعات)',
  videos:[
-        {label:'قائمة المحاضرات ', url:'https://youtu.be/_qVWQdMxjfo?si=mqIUOSv-jca_vQNZ'}],
+        {label:'قائمة المحاضرات ', url:'https://youtu.be/_qVWQdMxjfo'}],
  books:[
-        {label:'كتاب أخلاقيات منظمات الأعمال ', url:'https://drive.google.com/open?id=1nBZvVCd9u4NIHgQsVieiRQNbML8zh_eG&usp=drive_fs=drivesdk'}],
+        {label:'كتاب أخلاقيات منظمات الأعمال ', url:'https://drive.google.com/open?id=1nBZvVCd9u4NIHgQsVieiRQNbML8zh_eG&usp=drivesdk'}],
  models:[
-        {label:'بعض أسئلة المقالي جات للطلاب في الاختبار ', url:'https://drive.google.com/open?id=1R8jhNjPdnn90z7koDn_2H_z8yGJy9I58&usp=drive_fs=drivesdk'},
-        {label:'نموذج النظري اخلاقيات منظمات الاعمال  ', url:'https://drive.google.com/open?id=1GI5Qny8JkYh0ZOe-aLt3SQ7vuRvveWnK&usp=drive_fs=drivesdk'}],
+        {label:'بعض أسئلة المقالي جات للطلاب في الاختبار ', url:'https://drive.google.com/open?id=1R8jhNjPdnn90z7koDn_2H_z8yGJy9I58&usp=drivesdk'},
+        {label:'نموذج النظري اخلاقيات منظمات الاعمال  ', url:'https://drive.google.com/open?id=1GI5Qny8JkYh0ZOe-aLt3SQ7vuRvveWnK&usp=drivesdk'}],
  summaries:[
-           {label:'اخلاقيات_منظمات_الاعمال_ملف_المقالي معدل', url:'https://drive.google.com/open?id=1LIGSG-kdpqLMZPhcPHOxsBtWpXcDzBWa&usp=drive_fs=drivesdk'},
-           {label:'مقالي1 ', url:'https://drive.google.com/open?id=1rgffUkp379LTHiyT9B208k7UBnWpWxk7&usp=drive_fs=drivesdk'}],
+           {label:'اخلاقيات_منظمات_الاعمال_ملف_المقالي معدل', url:'https://drive.google.com/open?id=1LIGSG-kdpqLMZPhcPHOxsBtWpXcDzBWa&usp=drivesdk'},
+           {label:'مقالي1 ', url:'https://drive.google.com/open?id=1rgffUkp379LTHiyT9B208k7UBnWpWxk7&usp=drivesdk'}],
  Telegram:[
           {label:'اخلاقيات منظمات الاعمال.', url:'https://t.me/+YDzZ-giRL_g1MmU0'}],
  news:[
@@ -904,18 +907,18 @@ videos:[
  videos:[
          {label:'قائمة المحاضرات ', url:'https://youtube.com/playlist?list=PLzLmjaQB3jxb-MX2ErlgwxJtTIiOGxIfg'}],
  books:[
-       {label:'كتاب �اقتصاديات_النقود_والبنوك_023741 ', url:'https://drive.google.com/open?id=1C7QUdX0d9PhUpPGVyc9OcR71vif3W9Oy&usp=drive_fs=drivesdk'}],
+       {label:'كتاب �اقتصاديات_النقود_والبنوك_023741 ', url:'https://drive.google.com/open?id=1C7QUdX0d9PhUpPGVyc9OcR71vif3W9Oy&usp=drivesdk'}],
  models:[
-        {label:'النقود والبنوك_شامل ابجدي', url:'https://drive.google.com/open?id=1_SX369Jc8vbY2Zrzz2Puws43EleA20iy&usp=drive_fs=drivesdk'}],
+        {label:'النقود والبنوك_شامل ابجدي', url:'https://drive.google.com/open?id=1_SX369Jc8vbY2Zrzz2Puws43EleA20iy&usp=drivesdk'}],
  summaries:[
-           {label:'تجميع_النقود_والبنوك_الوحده_الثالثه_تجميعات_ا_دلال', url:'https://drive.google.com/open?id=1x-HCpk8HJXWqq1gXz3LGY4KyIXR3m0YL&usp=drive_fs=drivesdk'},
-          {label:'تجميع_النقود_والبنوك_الوحده_الخامسة_تجميعات_ا_دلال', url:'https://drive.google.com/open?id=1HpPj2dB792u5TZDcbGbOHpskYrlC5Cey&usp=drive_fs=drivesdk'},
-          {label:'تجميع_النقود_والبنوك_الوحده_الرابعه_تجميعات_ا_دلال ', url:'https://drive.google.com/open?id=1gDtse1FLLYvhPL3yf_wXc3IYr-YGeMxA&usp=drive_fs=drivesdk'},
-          {label:'قوانين نقود وبنوك_محمد الحاشدي ', url:'https://drive.google.com/open?id=1x9infDgeDSMu55Aqev8CVbK2BdRJpl1s&usp=drive_fs=drivesdk'},
-          {label:'��نقود_وبنوكك_الوحده_1_تجميع_دلال� ', url:'https://drive.google.com/open?id=1f2NUx9LwuabJZzn3NOavGZocBbsgtwWW&usp=drive_fs=drivesdk'}],
+           {label:'تجميع_النقود_والبنوك_الوحده_الثالثه_تجميعات_ا_دلال', url:'https://drive.google.com/open?id=1x-HCpk8HJXWqq1gXz3LGY4KyIXR3m0YL&usp=drivesdk'},
+          {label:'تجميع_النقود_والبنوك_الوحده_الخامسة_تجميعات_ا_دلال', url:'https://drive.google.com/open?id=1HpPj2dB792u5TZDcbGbOHpskYrlC5Cey&usp=drivesdk'},
+          {label:'تجميع_النقود_والبنوك_الوحده_الرابعه_تجميعات_ا_دلال ', url:'https://drive.google.com/open?id=1gDtse1FLLYvhPL3yf_wXc3IYr-YGeMxA&usp=drivesdk'},
+          {label:'قوانين نقود وبنوك_محمد الحاشدي ', url:'https://drive.google.com/open?id=1x9infDgeDSMu55Aqev8CVbK2BdRJpl1s&usp=drivesdk'},
+          {label:'��نقود_وبنوكك_الوحده_1_تجميع_دلال� ', url:'https://drive.google.com/open?id=1f2NUx9LwuabJZzn3NOavGZocBbsgtwWW&usp=drivesdk'}],
  Telegram:[
           {label:'شرح نقود وبنوك ♥️هنا كل ما يخص المادة.', url:'https://t.me/manybankm'},
-          {label:'تجميعات نماذج أقتصاديات نقود وبنوك.', url:'https://t.me/httpsNPqC8m5qm4E0YWJk'}],
+          {label:'تجميعات نماذج أقتصاديات نقود وبنوك.', url:'https://t.me/+NPqC8m5qm4E0YWJk'}],
  news:[
       {label:'📘 مادة: اقتصاديات النقود والبنوك'},
 {label:'🔹 نوع المادة:'},
@@ -953,14 +956,14 @@ videos:[
 
     {id:'self_skill', title:'مهارة التعلم الذاتي(2 ساعة)',
  videos:[
-        {label:'قائمة المحاضرات ', url:'https://youtube.com/playlist?list=PLEaqWF60mCKYGF8DcXB_vf9isjgu7HnAf&si=Coesq1dHsgU6Rm7Y'}],
+        {label:'قائمة المحاضرات ', url:'https://youtube.com/playlist?list=PLEaqWF60mCKYGF8DcXB_vf9isjgu7HnAf'}],
  books:[
-        {label:'كتاب مهارات التعلم الذاتي', url:'https://drive.google.com/open?id=1Ko7WRDSYEVFbzGDoJ3O19rmMp9MEQ55b&usp=drive_fs=drivesdk'}],
+        {label:'كتاب مهارات التعلم الذاتي', url:'https://drive.google.com/open?id=1Ko7WRDSYEVFbzGDoJ3O19rmMp9MEQ55b&usp=drivesdk'}],
  models:[
-         {label:'اختبر نفسك التعلم الذاتي 2025 BMuraisi ', url:'https://drive.google.com/open?id=1WQuEyTXyI9iJWsJ64WDgsH-X85ohhpUj&usp=drive_fs=drivesdk'},
-         {label:'نسخة 3 التعلم الذاتي تسلسلي 2025 BMuraisi ', url:'https://drive.google.com/open?id=1nrT_xg4wjnSPCljNzohfrlWZ8Qtj7wEo&usp=drive_fs=drivesdk'}],
+         {label:'اختبر نفسك التعلم الذاتي 2025 BMuraisi ', url:'https://drive.google.com/open?id=1WQuEyTXyI9iJWsJ64WDgsH-X85ohhpUj&usp=drivesdk'},
+         {label:'نسخة 3 التعلم الذاتي تسلسلي 2025 BMuraisi ', url:'https://drive.google.com/open?id=1nrT_xg4wjnSPCljNzohfrlWZ8Qtj7wEo&usp=drivesdk'}],
  summaries:[
-            {label:'مقالي التعلم الذاتي 2025 BMuraisi  ', url:'https://drive.google.com/open?id=10uqHlJG0MwCw2swYrnQ_vBidpdopXbzS&usp=drive_fs=drivesdk'}],
+            {label:'مقالي التعلم الذاتي 2025 BMuraisi  ', url:'https://drive.google.com/open?id=10uqHlJG0MwCw2swYrnQ_vBidpdopXbzS&usp=drivesdk'}],
  Telegram:[
           {label:'التعلم الذاتي 😊.', url:'https://t.me/+zObB0mAwfSc0NjE1'}],
  news:[
@@ -985,7 +988,7 @@ videos:[
 
     {id:'eng_terms', title:'مصطلحات ومراسلات باللغة E(3 ساعات)',
  videos:[
-         {label:'قائمة المحاضرات ', url:'https://youtube.com/playlist?list=PLzLmjaQB3jxYcVQ0YqAmiVfGq-JBkwfin&si=O7QqlPDtrq2v80LX'}],
+         {label:'قائمة المحاضرات ', url:'https://youtube.com/playlist?list=PLzLmjaQB3jxYcVQ0YqAmiVfGq-JBkwfin'}],
  books:[
         {label:'كتاب مصطلحات ومراسلات باللغة الإنجليزية', url:'https://drive.google.com/open?id=1Y4HMcRVgNYX2OPoEJ1vYZpooTuYIg_Of&usp=drive_fs=drivesdk'}],
  models:[
@@ -1029,21 +1032,25 @@ Telegram:[
 {label:'- المادة ذات محتوى بسيط وواقعي، وتتناول طريقة كتابة الرسائل.'},
 {label:'- بعض الطلاب يفضلون التركيز على النظري فقط، لكن يُنصح بمذاكرة المقالي لضمان درجات إضافية، خاصة أن إجاباته قصيرة وبسيطة.'}]},
 
-    {id:'org_behavior', title:'السلوك التنظيمي(3 ساعات)',
- videos:[
-         {label:'المحاضرة الاولى', url:'https://youtu.be/Ul320hFqG4k?si=JpfD2gHCxj8AlcHo'},
-         {label:'المحاضرة الثانية', url:'https://youtu.be/sP0nFVqlUQU?si=jN2SSYLTMxPfdwWC'},
-         {label:'المحاضرة  الثالثه', url:'https://youtu.be/L5haHlxNtZM?si=pd7OD1cUC3IghrLz'},
-         {label:'المحاضرة الرابعة', url:'https://youtu.be/qQQNqkZ38Rg?si=fNeXrKq2zHeKlrIl'}],
- books:[
-       {label:'كتاب السلوك التنظيمي', url:'https://drive.google.com/open?id=1ctVoUvw6miOQbQNEHISNR8OL52KTYiOL&usp=drive_fs=drivesdk'},],
- models:[
-       {label:'تجريبي السلوك التنظيمي.....بنت عدن', url:'https://drive.google.com/open?id=1GW_bAr3z-EiQyviCKlJNikcAyiLXqwZo&usp=drive_fs=drivesdk'},
-       {label:'السلوك التنظيمي تكاليف', url:'https://drive.google.com/open?id=1n0biiQTYj-WZuL-InjRlovt73NTooAQU&usp=drive_fs=drivesdk'},
-       {label:'تعديل ص ١ مق_سلوك تنظيمي مرتب شامل المقالي _ صادق جزيلان (1)', url:'https://drive.google.com/open?id=1kNdELqbUDUmxiT7gSTIhZ7RmR9n4U2k1&usp=drive_fs=drivesdk'}],
- summaries:[],
- Telegram:[
-          {label:'السلوك التنظيمي.', url:'https://t.me/sudbdohdi'}],
+   {id:'org_behavior', title:'السلوك التنظيمي(3 ساعات)',
+videos:[
+  {label:'المحاضرة الأولى', url:'https://youtu.be/Ul320hFqG4k'},
+  {label:'المحاضرة الثانية', url:'https://youtu.be/sP0nFVqlUQU'},
+  {label:'المحاضرة الثالثة', url:'https://youtu.be/L5haHlxNtZM'},
+  {label:'المحاضرة الرابعة', url:'https://youtu.be/qQQNqkZ38Rg'}
+],
+books:[
+  {label:'كتاب السلوك التنظيمي', url:'https://drive.google.com/open?id=1ctVoUvw6miOQbQNEHISNR8OL52KTYiOL&usp=drivesdk'}
+],
+models:[
+  {label:'تجريبي السلوك التنظيمي - بنت عدن', url:'https://drive.google.com/open?id=1GW_bAr3z-EiQyviCKlJNikcAyiLXqwZo&usp=drivesdk'},
+  {label:'السلوك التنظيمي تكاليف', url:'https://drive.google.com/open?id=1n0biiQTYj-WZuL-InjRlovt73NTooAQU&usp=drivesdk'},
+  {label:'تعديل ص ١ - مقالي سلوك تنظيمي شامل - صادق جزيلان', url:'https://drive.google.com/open?id=1kNdELqbUDUmxiT7gSTIhZ7RmR9n4U2k1&usp=drivesdk'}
+],
+summaries:[],
+Telegram:[
+  {label:'السلوك التنظيمي.', url:'https://t.me/sudbdohdi'}
+],
  news:[
        {label:'📘 مادة: السلوك التنظيمي'},
 {label:'🔹 نوع المادة:'},
@@ -1079,18 +1086,25 @@ Telegram:[
 {label:'توضيح أو توسيع إجابات ملف المقالي القصيرة.'},
 {label:'اختصار صفحات من الكتاب عند تصويرها.'}]},
 
-    {id:'grad_research', title:'بحث التخرج(3 ساعات)', 
+   {id:'grad_research', title:'بحث التخرج(3 ساعات)',
 videos:[
-       {label:'شروحات بحث التخرج.', url:'https://youtube.com/playlist?list=PLzLmjaQB3jxYAtNxXRUgdvIHAboCSVxt_&si=ahgTphZ_c3X7uoeq'}],
- books:[{label:' * الرجوع الى قنوات التلجرام.'}],
- models:[{label:' * الرجوع الى قنوات التلجرام.'}],
- summaries:[{label:' * الرجوع الى قنوات التلجرام.'}],
- Telegram:[
-          
-          {label:'خطط وبحوث طلاب د. أمين الصديقي.', url:'https://t.me/+TdlKKJ9ME-A2M2Y0'},
-          {label:'بحوث التخرج.', url:'https://t.me/+DxFdrULsRFc1NmQ0'},
-          {label:'خطوات بحث التخرج.', url:'https://t.me/+GSulobtXSvozMzI0'},
-          {label:'النظريه المحاسبيه.', url:'https://t.me/+D-lHBRWLsSY5YTVk'}],
+  {label:'شروحات بحث التخرج.', url:'https://youtube.com/playlist?list=PLzLmjaQB3jxYAtNxXRUgdvIHAboCSVxt_'}
+],
+books:[
+  {label:'* الرجوع إلى قنوات التلجرام.'}
+],
+models:[
+  {label:'* الرجوع إلى قنوات التلجرام.'}
+],
+summaries:[
+  {label:'* الرجوع إلى قنوات التلجرام.'}
+],
+Telegram:[
+  {label:'خطط وبحوث طلاب د. أمين الصديقي.', url:'https://t.me/+TdlKKJ9ME-A2M2Y0'},
+  {label:'بحوث التخرج.', url:'https://t.me/+DxFdrULsRFc1NmQ0'},
+  {label:'خطوات بحث التخرج.', url:'https://t.me/+GSulobtXSvozMzI0'},
+  {label:'النظرية المحاسبية.', url:'https://t.me/+D-lHBRWLsSY5YTVk'}
+],
  news:[
       {label:'إرشادات وتفاصيل حول مادة بحث التخرج 🎓'},
 {label:'مادة بحث التخرج هي مادة تخصصية مدتها ثلاث ساعات معتمدة (3 ساعات)، وتُفتح للتسجيل بعد اجتياز مادة طرق البحث العلمي.'},
@@ -1131,26 +1145,30 @@ videos:[
 {label:'   * اذكر أهمية البحث.'},
 {label:'   * ما هي أهم المصادر والمراجع التي اعتمدت عليها؟ وأكثر مرجع أخذت منه.'},
 {label:'   * كيف قمت بكتابة وتوثيق المراجع والمصادر؟'}]}
-  ],
 
-  major: [
-    {id:'man_acc', title:'محاسبة إدارية(3 ساعات)', 
+  ], major: [
+ {id:'man_acc', title:'محاسبة إدارية(3 ساعات)',
 videos:[
-         {label:'المحاضرة الاولى', url:'https://youtu.be/yKEL7EkqPq8?si=ktlepjyrV36lCmnK'},
-         {label:'المحاضرة الثانية', url:'https://youtu.be/WHsyAzjLAzE?si=Y5MkIiaq1mXo5WrL'},
-         {label:'المحاضرة  الثالثه', url:'https://youtu.be/WUGRWEcgnWc?si=ZdeLKOYvJG4gHf_V'},
-         {label:'المحاضرة الرابعة', url:'https://youtu.be/7rumoDx0Ec0?si=gdYUuYM0l_1s_s02'},
-         {label:'المحاضرة  الخامسة', url:'https://youtu.be/n1GOPlf83XM?si=b9r4h3u7UGhrmsx4'},
-         {label:'المحاضرة السادسة', url:'https://youtu.be/2vz2epSUSdk?si=_iK5TWXOoneV1aYE'}],
- books:[
-       {label:'كتاب المحاسبة الإدارية', url:'https://drive.google.com/open?id=1m6bAsSQHrlYpgiud-GXUpDxBpcTW1HnR&usp=drive_fs=drivesdk'}],
- models:[
-        {label:'�مقالي معدل محاسبة ادارية( دلال+مايسة)', url:'https://drive.google.com/open?id=1kBmU54ItXDx2LXOjdjDD8gfHK2DPq2C_&usp=drive_fs=drivesdk'},
-        {label:'نموذج محاسبة إدارية رشيد العواضي', url:'https://drive.google.com/open?id=13Z5w7C4cBNyLRKoHoYwoAczeTSW__tHi&usp=drive_fs=drivesdk'}],
- summaries:[
-           {label:'ملخص قوانين محاسبه اداريه.صفاء الفقيه', url:'https://drive.google.com/open?id=1c5E53J0ZdwxvbxYPcl78Vak5OVlrvefT&usp=drive_fs=drivesdk'}],
- Telegram:[
-          {label:'محاسبه اداريه.', url:'https://t.me/+AfrxL6sQoFBkOGQ0'}],
+  {label:'المحاضرة الأولى', url:'https://youtu.be/yKEL7EkqPq8'},
+  {label:'المحاضرة الثانية', url:'https://youtu.be/WHsyAzjLAzE'},
+  {label:'المحاضرة الثالثة', url:'https://youtu.be/WUGRWEcgnWc'},
+  {label:'المحاضرة الرابعة', url:'https://youtu.be/7rumoDx0Ec0'},
+  {label:'المحاضرة الخامسة', url:'https://youtu.be/n1GOPlf83XM'},
+  {label:'المحاضرة السادسة', url:'https://youtu.be/2vz2epSUSdk'}
+],
+books:[
+  {label:'كتاب المحاسبة الإدارية', url:'https://drive.google.com/open?id=1m6bAsSQHrlYpgiud-GXUpDxBpcTW1HnR&usp=drivesdk'}
+],
+models:[
+  {label:'مقالي معدل محاسبة إدارية (دلال + مايسة)', url:'https://drive.google.com/open?id=1kBmU54ItXDx2LXOjdjDD8gfHK2DPq2C_&usp=drivesdk'},
+  {label:'نموذج محاسبة إدارية رشيد العواضي', url:'https://drive.google.com/open?id=13Z5w7C4cBNyLRKoHoYwoAczeTSW__tHi&usp=drivesdk'}
+],
+summaries:[
+  {label:'ملخص قوانين محاسبة إدارية - صفاء الفقيه', url:'https://drive.google.com/open?id=1c5E53J0ZdwxvbxYPcl78Vak5OVlrvefT&usp=drivesdk'}
+],
+Telegram:[
+  {label:'محاسبة إدارية.', url:'https://t.me/+AfrxL6sQoFBkOGQ0'}
+],
  news:[
       {label:'📘 مادة: المحاسبة الإدارية'},
 {label:'🔹 نوع المادة:'},
@@ -1183,20 +1201,25 @@ videos:[
 {label:'- مجرد النظر للمسألة يوضح المطلوب إذا تمت مذاكرتها جيدًا.'},
 {label:'- المادة جميلة وسهلة وتحتاج فقط وقت بسيط + تركيز.'}]},
 
-    {id:'audit1', title:'مراجعة وتدقيق الحسابات 1(3 ساعات)',
- videos:[
-        {label:'المحاضرة الاولى', url:'https://www.youtube.com/watch?v=YFZMcQnlv_g&t=13s'},
-         {label:'المحاضرة الثانية', url:'https://www.youtube.com/watch?v=IeTNMJkUmgQ'},
-         {label:'المحاضرة  الثالثه', url:'https://www.youtube.com/watch?v=7ui10CSI_k0'},
-         {label:'المحاضرة الرابعة', url:'https://www.youtube.com/watch?v=pHvuVHxVUkA'}],
- books:[ 
-        {label:'المراجعة وتدقيق الحسابات (1)', url:'https://drive.google.com/open?id=1YXOGXOuzKlqYg5LC9BcpPXVQvd2znes8&usp=drive_fs=drivesdk'}],
- models:[   
-         {label:'��المراجعة_وتدقيق_الحسابات1_تسلسلي_نسخة_2_اخر_تعديل_�_2', url:'https://drive.google.com/open?id=1F1QD6zHkO-sN752UyKzsCK5l3ISYo2oo&usp=drive_fs=drivesdk'}],
- summaries:[
-           {label:'مقالي مراجعة وتدقيق الحسابات١ 2025', url:'https://drive.google.com/open?id=1LAQSm6C43EJ3hw1knHfZzAAKY5FcwZgg&usp=drive_fs=drivesdk'}],
- Telegram:[
-           ],
+    {
+  id:'audit1',
+  title:'مراجعة وتدقيق الحسابات 1(3 ساعات)',
+  videos:[
+    {label:'المحاضرة الأولى', url:'https://youtu.be/YFZMcQnlv_g'},
+    {label:'المحاضرة الثانية', url:'https://youtu.be/IeTNMJkUmgQ'},
+    {label:'المحاضرة الثالثة', url:'https://youtu.be/7ui10CSI_k0'},
+    {label:'المحاضرة الرابعة', url:'https://youtu.be/pHvuVHxVUkA'}
+  ],
+  books:[
+    {label:'المراجعة وتدقيق الحسابات (1)', url:'https://drive.google.com/open?id=1YXOGXOuzKlqYg5LC9BcpPXVQvd2znes8&usp=drivesdk'}
+  ],
+  models:[
+    {label:'المراجعة وتدقيق الحسابات 1 - تسلسلي نسخة 2 (آخر تعديل)', url:'https://drive.google.com/open?id=1F1QD6zHkO-sN752UyKzsCK5l3ISYo2oo&usp=drivesdk'}
+  ],
+  summaries:[
+    {label:'مقالي مراجعة وتدقيق الحسابات ١ - 2025', url:'https://drive.google.com/open?id=1LAQSm6C43EJ3hw1knHfZzAAKY5FcwZgg&usp=drivesdk'}
+  ],
+  Telegram:[],
  news:[ 
        {label:'📘 مادة: مصطلحات ومراسلات باللغة الإنجليزية'},
 {label:'🔹 نوع المادة:'},
@@ -1227,20 +1250,25 @@ videos:[
 {label:'- المادة ذات محتوى بسيط وواقعي، وتتناول طريقة كتابة الرسائل.'},
 {label:'- بعض الطلاب يفضلون التركيز على النظري فقط، لكن يُنصح بمذاكرة المقالي لضمان درجات إضافية، خاصة أن إجاباته قصيرة وبسيطة.'}]},
 
-    {id:'audit2', title:'مراجعة وتدقيق الحسابات 2(3 ساعات)', 
-videos:[
-        {label:'المحاضرة الاولى', url:'https://www.youtube.com/watch?v=pHOOTHOtUsY&pp=0gcJCQYKAYcqIYzv'},
-         {label:'المحاضرة الثانية', url:'https://www.youtube.com/watch?v=7rqkbOUKtkY'},
-         {label:'المحاضرة  الثالثه', url:'https://www.youtube.com/watch?v=YsHAUp-AaTg'}],
- books:[ 
-       {label:';كتاب المراجعة وتدقيق الحسابات (2)', url:'https://drive.google.com/open?id=1StB-62_ZNU8vwAXWp4ORXWQT6hpyCmwd&usp=drive_fs=drivesdk'}],
- models:[
-        {label:'مراجعة وتدقيق الحسابات ٢ شامل ومعدل للمرة الثانية', url:'https://drive.google.com/open?id=1bjD9smksgeSIzCoscPYDfqDH_VNJcjyc&usp=drive_fs=drivesdk'}],
- summaries:[
-           {label:'مراجعة وتدقيق ٢', url:'https://drive.google.com/open?id=1Az5HfL6tGB7UtVXDTFXmMGcQZIdGOzSu&usp=drive_fs=drivesdk'},
-           {label:'ملخص مراجعة وتدقيق الحسابات (2)', url:'https://drive.google.com/open?id=1yXR6yfWvzyBxGNrojWZaNoe-UfQqiGwm&usp=drive_fs=drivesdk'}],
- Telegram:[
-           ],
+    {
+  id:'audit2',
+  title:'مراجعة وتدقيق الحسابات 2(3 ساعات)',
+  videos:[
+    {label:'المحاضرة الأولى', url:'https://youtu.be/pHOOTHOtUsY'},
+    {label:'المحاضرة الثانية', url:'https://youtu.be/7rqkbOUKtkY'},
+    {label:'المحاضرة الثالثة', url:'https://youtu.be/YsHAUp-AaTg'}
+  ],
+  books:[
+    {label:'كتاب المراجعة وتدقيق الحسابات (2)', url:'https://drive.google.com/open?id=1StB-62_ZNU8vwAXWp4ORXWQT6hpyCmwd&usp=drivesdk'}
+  ],
+  models:[
+    {label:'مراجعة وتدقيق الحسابات ٢ شامل ومعدل للمرة الثانية', url:'https://drive.google.com/open?id=1bjD9smksgeSIzCoscPYDfqDH_VNJcjyc&usp=drivesdk'}
+  ],
+  summaries:[
+    {label:'مراجعة وتدقيق ٢', url:'https://drive.google.com/open?id=1Az5HfL6tGB7UtVXDTFXmMGcQZIdGOzSu&usp=drivesdk'},
+    {label:'ملخص مراجعة وتدقيق الحسابات (2)', url:'https://drive.google.com/open?id=1yXR6yfWvzyBxGNrojWZaNoe-UfQqiGwm&usp=drivesdk'}
+  ],
+  Telegram:[],
  news:[
        {label:'📘 *مادة: التدقيق ومراجعة الحسابات*. (1)'},
 {label:'🔹 *نوع المادة:*'},
@@ -1271,24 +1299,31 @@ videos:[
 {label:'- المادة *ممتعة ومفهومة* إذا ذاكرتوا بتركيز.'}]},
 
 
-    {id:'corp_acc', title:'محاسبة شركات الأموال(3 ساعات)', 
-videos:[
-       {label:'المحاضرة الاولى', url:'https://www.youtube.com/watch?v=pahdUvujpac'},
-         {label:'المحاضرة الثانية', url:'https://www.youtube.com/watch?v=cHNSUDfEmsc'},
-         {label:'المحاضرة  الثالثه', url:'https://www.youtube.com/watch?v=4_Ln5K2FBoU'},
-         {label:'المحاضرة الرابعة', url:'https://www.youtube.com/watch?v=tnLW6MAXTDM'},
-         {label:'المحاضرة  الخامسة', url:'https://www.youtube.com/watch?v=WqrQqylsHUo&pp=0gcJCfwJAYcqIYzv'},
-         {label:'المحاضرة السادسة', url:'https://www.youtube.com/watch?v=daS1qSTEUoo'}],
- books:[
-       {label:'كتاب شركات الاموال', url:'https://drive.google.com/open?id=1PvP9xQ6r8ikwjw0UGcCi1Cng5-ZZUyKs&usp=drive_fs=drivesdk'}],
- models:[
-         {label:'اموال اختبر نفسك', url:'https://drive.google.com/open?id=1qn52mp65EWYpzfQy7-cS8nsQJBDwjjrE&usp=drive_fs=drivesdk'},
-         {label:'نماذج محاسبة اموال حُسن علي معدل2024', url:'https://drive.google.com/open?id=1Pd6PJEP-2P3eb5Sfu2VqpgD_tTNkpRdH&usp=drive_fs=drivesdk'},
-         {label:'شركات_اموال_النسخة_الثالثة_اخر_تعديل_فياض_الحميدي_3_معدل', url:'https://drive.google.com/open?id=1OPXkFmhUwWHnXfYHcjb8wjhkiWjrZzU7&usp=drive_fs=drivesdk'}],
- summaries:[
-           {label:'محاضرات محاسبة أموال2024', url:'https://drive.google.com/open?id=1vymHMiFzuOoHxqMdbqLwD9L5HcWaYWRn&usp=drive_fs=drivesdk'}],
- Telegram:[
-          {label:'محاسبه شركات اموال 💵', url:'https://t.me/amwaaalllll'}], 
+   {
+  id:'corp_acc',
+  title:'محاسبة شركات الأموال(3 ساعات)',
+  videos:[
+    {label:'المحاضرة الأولى', url:'https://youtu.be/pahdUvujpac'},
+    {label:'المحاضرة الثانية', url:'https://youtu.be/cHNSUDfEmsc'},
+    {label:'المحاضرة الثالثة', url:'https://youtu.be/4_Ln5K2FBoU'},
+    {label:'المحاضرة الرابعة', url:'https://youtu.be/tnLW6MAXTDM'},
+    {label:'المحاضرة الخامسة', url:'https://youtu.be/WqrQqylsHUo'},
+    {label:'المحاضرة السادسة', url:'https://youtu.be/daS1qSTEUoo'}
+  ],
+  books:[
+    {label:'كتاب شركات الأموال', url:'https://drive.google.com/open?id=1PvP9xQ6r8ikwjw0UGcCi1Cng5-ZZUyKs&usp=drivesdk'}
+  ],
+  models:[
+    {label:'أموال - اختبر نفسك', url:'https://drive.google.com/open?id=1qn52mp65EWYpzfQy7-cS8nsQJBDwjjrE&usp=drivesdk'},
+    {label:'نماذج محاسبة أموال - حُسن علي - معدل 2024', url:'https://drive.google.com/open?id=1Pd6PJEP-2P3eb5Sfu2VqpgD_tTNkpRdH&usp=drivesdk'},
+    {label:'شركات أموال - النسخة الثالثة - آخر تعديل - فياض الحميدي', url:'https://drive.google.com/open?id=1OPXkFmhUwWHnXfYHcjb8wjhkiWjrZzU7&usp=drivesdk'}
+  ],
+  summaries:[
+    {label:'محاضرات محاسبة أموال 2024', url:'https://drive.google.com/open?id=1vymHMiFzuOoHxqMdbqLwD9L5HcWaYWRn&usp=drivesdk'}
+  ],
+  Telegram:[
+    {label:'محاسبة شركات أموال 💵', url:'https://t.me/amwaaalllll'}
+  ], 
 news:[
       {label:'📘 المادة: محاسبة شركات الأموال'},
 {label:'🧮 طبيعة المادة:'},
@@ -1325,21 +1360,26 @@ news:[
 {label:'- قناة التليجرام تحتوي على ملفات النماذج وحلولها وهي كثيرة جدًا، لذلك ابدأ المراجعة من الآن.'},
 {label:'- الكتاب كامل يُذاكر باستثناء الوحدة السابعة (شركات التوصية بالأسهم) والوحدة الثامنة (الشركات ذات المسؤولية المحدودة).'}]},
 
-    {id:'part_acc', title:'محاسبة شركات الأشخاص(3 ساعات)', 
-videos:[
-       {label:'المحاضرة الاولى', url:'https://www.youtube.com/watch?v=mx4J4qF13ws&t=20s&pp=0gcJCfwJAYcqIYzv'},
-         {label:'المحاضرة الثانية', url:'https://www.youtube.com/watch?v=CoxuaS8ijoU'},
-         {label:'المحاضرة  الثالثه', url:'https://www.youtube.com/watch?v=nVyUhWpGsoo'},
-         {label:'المحاضرة الرابعة', url:'https://www.youtube.com/watch?v=EbWb6ClQDRQ'}],
- books:[
-        {label:'كتاب محاسبة شركات الأشخاص', url:'https://drive.google.com/open?id=1CVMpYRNbpt380ip8M_xbwExg_2zaa7Cz&usp=drive_fs=drivesdk'}],
- models:[
-         {label:'نموذج محاسبة اشخاص حوسن علي', url:'https://drive.google.com/open?id=1Cqz-Km14ptXyyZKtd1ALAFYsVAeX6RBr&usp=drive_fs=drivesdk'},
-         {label:'��نماذج_محاسبة_اشخاص_وعد_&_إيلاف_� (1)', url:'https://drive.google.com/open?id=1WI7XbCBUXz8WFznmQ1b5R1jCZtBNWrfX&usp=drive_fs=drivesdk'}],
- summaries:[
-            ],
- Telegram:[
-          {label:'محاسبه شركات اشخاص', url:'https://t.me/+S4pI6Em91JZkZjVk'}],
+    {
+  id:'part_acc',
+  title:'محاسبة شركات الأشخاص(3 ساعات)',
+  videos:[
+    {label:'المحاضرة الأولى', url:'https://youtu.be/mx4J4qF13ws'},
+    {label:'المحاضرة الثانية', url:'https://youtu.be/CoxuaS8ijoU'},
+    {label:'المحاضرة الثالثة', url:'https://youtu.be/nVyUhWpGsoo'},
+    {label:'المحاضرة الرابعة', url:'https://youtu.be/EbWb6ClQDRQ'}
+  ],
+  books:[
+    {label:'كتاب محاسبة شركات الأشخاص', url:'https://drive.google.com/open?id=1CVMpYRNbpt380ip8M_xbwExg_2zaa7Cz&usp=drivesdk'}
+  ],
+  models:[
+    {label:'نموذج محاسبة أشخاص - حوسن علي', url:'https://drive.google.com/open?id=1Cqz-Km14ptXyyZKtd1ALAFYsVAeX6RBr&usp=drivesdk'},
+    {label:'نماذج محاسبة أشخاص - وعد & إيلاف', url:'https://drive.google.com/open?id=1WI7XbCBUXz8WFznmQ1b5R1jCZtBNWrfX&usp=drivesdk'}
+  ],
+  summaries:[],
+  Telegram:[
+    {label:'محاسبة شركات أشخاص', url:'https://t.me/+S4pI6Em91JZkZjVk'}
+  ],
  news:[
       {label:'📘 مادة: (محاسبة شركات الأشخاص)'},
 {label:'🧮 طبيعة المادة:'},
@@ -3775,6 +3815,16 @@ setInterval(() => {
 "zahra": "734306666",
 // ثناء علي
 "thana11m": "123456",
+// فاطمة صالح
+"Fatma saleh": "73885550",
+// فاطمه محمد احمد عبدالله
+"fti7ti": "12345567fff",
+// محفوظ حسن محفوظ
+"Adam al-sayari": "22188661",
+// هادي صالح
+"Almuraisi": "Almuraisi",
+// محمد صادق
+"Fm123456": "654321",
 
   };
 
