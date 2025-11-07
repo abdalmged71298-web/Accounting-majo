@@ -314,27 +314,33 @@ section {
 
 
    <!-- ===== نموذج الدخول (ظاهر مبدئياً) ===== -->
-    <div id="loginForm">
-      <div class="field">
-        <label for="user">اسم المستخدم</label>
-       <input id="user" name="username" autocomplete="username" />
+<div id="loginForm">
+  <div class="field">
+    <label for="user">اسم المستخدم</label>
+    <input id="user" name="username" autocomplete="off" />
+  </div>
 
+  <div class="field">
+    <label for="pwd">كلمة المرور</label>
+    <input id="pwd" name="password" type="password" autocomplete="off" />
+  </div>
 
-      </div>
+  <div class="field">
+    <label>
+      <input type="checkbox" id="rememberChk" /> تذكرني على هذا الجهاز
+    </label>
+  </div>
 
-      <div class="field">
-        <label for="pwd">كلمة المرور</label>
-    <input id="pwd" name="password" type="password" autocomplete="current-password" />
+  <button id="loginBtn" style="width:100%;">دخول</button>
+  <div id="errorMsg" style="color:red; margin-top:8px;"></div>
+</div>
 
-      </div>
+<hr class="sep">
 
-      <button id="loginBtn" style="width:100%;">دخول</button>
-    </div>
+<!-- ===== المحتوى المحمي ===== -->
+<div id="protectedContent" class="hidden">
+ 
 
-    <hr class="sep">
-
-    <!-- ===== المحتوى المحمي: ضع هنا فقط الـ FRAGMENT (بدون DOCTYPE/HTML/HEAD/BODY) ===== -->
-    <div id="protectedContent" class="hidden">
 
 <header style="background-color: #d0e6ff; padding: 15px; text-align: center;">
   <h1 style="
@@ -3689,26 +3695,16 @@ setInterval(() => {
 }, 1000);
 </script>
 </h2>
-      <p>اضغ زر تسجيل الخروج للعودة لقائمة تسجيل الدخول.</p>
-      <!-- مثال: زر خروج لإعادة عرض نموذج الدخول -->
-      <div style="margin-top:12px">
-        <button id="logoutBtn" style="background:#ffd6d6">تسجيل خروج</button>
-      </div>
-    </div>
-
+    >اضغ زر تسجيل الخروج للعودة لقائمة تسجيل الدخول.</p>
+  <div style="margin-top:12px">
+    <button id="logoutBtn" style="background:#ffd6d6">تسجيل خروج</button>
   </div>
-</div>
- 
-
-<div class="field">
-  <label>
-    <input type="checkbox" id="rememberChk" /> تذكرني على هذا الجهاز
-  </label>
 </div>
 
 <script>
   const users = {
-   // دفعة 2025
+    // دفعة 2025
+
     "salim":"0580616010",
     "Sadeq": "0533263031",
     "Mohamed": "0545237384",
@@ -3835,78 +3831,48 @@ setInterval(() => {
   const loginBtn = document.getElementById('loginBtn');
   const logoutBtn = document.getElementById('logoutBtn');
   const rememberChk = document.getElementById('rememberChk');
+  const errorMsg = document.getElementById('errorMsg');
 
-  // helpers لحفظ واسترجاع كائن ال credentials
-  function getSavedCreds(){
-    try{
-      return JSON.parse(localStorage.getItem('savedCreds') || '{}');
-    }catch(e){
-      return {};
-    }
-  }
-  function setSavedCreds(obj){
-    localStorage.setItem('savedCreds', JSON.stringify(obj));
-  }
-
-  document.addEventListener('DOMContentLoaded', ()=> {
+  document.addEventListener('DOMContentLoaded', () => {
     protectedContent.classList.add('hidden');
     loginForm.classList.remove('hidden');
 
-    // إذا وُجد اسم مستخدم محفوظ فقط (نملأ إسم المستخدم)
-    const savedCreds = getSavedCreds();
-    // نملأ اسم المستخدم الافتراضي بآخر اسم تم استخدامه (اختياري)
     const lastUser = localStorage.getItem('lastUser');
-    if(lastUser) userEl.value = lastUser;
-
-    // إذا كان يوجد كلمة مرور محفوظة لهذا الـ username نملئها تلقائياً
-    if(lastUser && savedCreds[lastUser]){
-      pwdEl.value = savedCreds[lastUser];
-      rememberChk.checked = true;
-    }
+    if (lastUser) userEl.value = lastUser;
   });
 
-  function tryLogin(){
-    const name = (userEl.value||'').trim();
-    const code = (pwdEl.value||'').trim();
+  function tryLogin() {
+    const name = (userEl.value || '').trim();
+    const code = (pwdEl.value || '').trim();
 
-    if(name && users[name] && users[name] === code){
+    if (name && users[name] && users[name] === code) {
       loginForm.classList.add('hidden');
       protectedContent.classList.remove('hidden');
 
-      // احفظ آخر مستخدم استخدم الجهاز (لملء الحقل لاحقًا)
-      localStorage.setItem('lastUser', name);
-
-      // إذا اختار المستخدم "تذكرني" فاحفظ كلمة المرور تحت اسمه
-      if(rememberChk.checked){
-        const sc = getSavedCreds();
-        sc[name] = code; // يحفظ/يحدث كلمة المرور لهذا الاسم
-        setSavedCreds(sc);
+      if (rememberChk.checked) {
+        localStorage.setItem('lastUser', name);
       } else {
-        // إذا لم يختِر تذكّرني، تأكد من إزالة كلمة المرور المحفوظة لهذا المستخدم
-        const sc = getSavedCreds();
-        if(sc[name]){ delete sc[name]; setSavedCreds(sc); }
+        localStorage.removeItem('lastUser');
       }
 
-      // لتنظيف الحقول (خصوصية)
       userEl.value = '';
       pwdEl.value = '';
       rememberChk.checked = false;
+      errorMsg.textContent = '';
     } else {
-      alert("اسم المستخدم أو كلمة المرور خاطئة");
+      errorMsg.textContent = "اسم المستخدم أو كلمة المرور خاطئة";
       pwdEl.value = '';
       pwdEl.focus();
     }
   }
 
-  logoutBtn.addEventListener('click', ()=>{
+  logoutBtn.addEventListener('click', () => {
     protectedContent.classList.add('hidden');
     loginForm.classList.remove('hidden');
     userEl.focus();
-    // خيار: امسح آخر مستخدم عند الخروج (غير مفعل بالافتراضي)
-    // localStorage.removeItem('lastUser');
   });
 
   loginBtn.addEventListener('click', tryLogin);
-  userEl.addEventListener('keydown', e=>{ if(e.key==='Enter') tryLogin(); });
-  pwdEl.addEventListener('keydown', e=>{ if(e.key==='Enter') tryLogin(); });
+  userEl.addEventListener('keydown', e => { if (e.key === 'Enter') tryLogin(); });
+  pwdEl.addEventListener('keydown', e => { if (e.key === 'Enter') tryLogin(); });
 </script>
