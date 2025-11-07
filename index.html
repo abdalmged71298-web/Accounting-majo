@@ -319,11 +319,13 @@ section {
   <h1 style="font-size: 16px; margin: 0;">بوابة دليل الطالب قسم المحاسبة</h1>
 </section>
 
-
-<header style="text-align:center; padding:10px; background:#f0f0f0;">
-  <a href="privacy.html" style="margin:0 10px;">سياسة الخصوصية</a>
-  <a href="contact.html" style="margin:0 10px;">اتصل بنا</a>
-</header>
+<div style="text-align:center; font-size:13px; margin-top:8px; color:#666;">
+  <a href="privacy.html" style="margin:0 8px; color:#666; text-decoration:none;">سياسة الخصوصية</a>
+  |
+  <a href="contact.html" style="margin:0 8px; color:#666; text-decoration:none;">اتصل بنا</a>
+</div>
+  <!-- باقي محتوى الصفحة -->
+</body>
 
 <!-- ===== نموذج الدخول (ظاهر مبدئياً) ===== -->
 <div id="loginForm">
@@ -2860,9 +2862,9 @@ function showGraduate(name){
 
     tabAreaEl.appendChild(ul);
   }
-}
-/* انطلق */
+}/* انطلق */
 selectMain('college');
+
 // Global search (ابحث عبر كل الفئات)
 (function(){
   const input = document.getElementById('globalSearchInput');
@@ -2906,30 +2908,54 @@ selectMain('college');
     resultsBox.querySelectorAll('.res-item').forEach(el=>{
       el.addEventListener('click', function(e){
         const id = this.dataset.id;
-        openFromSearch(id, this.dataset.cat);
+        const cat = this.dataset.cat;
         resultsBox.style.display='none';
+        input.blur(); // إغلاق لوحة المفاتيح
+        openFromSearch(id, cat);
       });
     });
   }
 
-  // فتح نتيجة البحث: نحاول استعمال selectSubject الموجود، وإلا نحدد الفئة أولًا
+  // فتح نتيجة البحث: إغلاق الفلاتر ثم فتح المادة بعد تأخير بسيط
   function openFromSearch(id, cat){
     try {
-      // إذا كانت دالة selectSubject معرفة (مثل في الكود المفصل لديك)
       if(typeof selectSubject === 'function'){
-        // نحدد الفئة الحالية بحيث تكون نفس فئة العنصر ثم ننادي selectSubject
-        currentMain = cat; // يضمن أن findSubjectById يبحث في الفئة الصحيحة
-        renderSubjects(cat); // يعيد ملء القائمة ليتوافق الاختيار
-        selectSubject(id);
+        currentMain = cat;
+        renderSubjects(cat);
+
+        // إغلاق أي فلتر أحرف أو مستطيل إن وجد
+        document.querySelectorAll('.letter-box, #letterFilterBox, .letter-filter, .letter-panel').forEach(el => {
+          el.style.display = 'none';
+          el.classList.remove('active');
+          el.classList.remove('show');
+        });
+
+        // ✨ تأخير بسيط لضمان تحميل القائمة قبل اختيار المادة
+        setTimeout(() => {
+          selectSubject(id);
+
+          if(typeof openSubjectFiles === 'function'){
+            openSubjectFiles(id);
+          } else {
+            const filesSection = document.getElementById('subjectFiles');
+            if(filesSection) filesSection.scrollIntoView({behavior: 'smooth'});
+          }
+        }, 100); // 100ms كافية غالبًا، يمكن زيادتها إلى 200 إذا لزم
+
         return;
       }
     } catch(e){}
-    // بديل بسيط: نبحث عبر كل المجموعات ونفتح عبر وظيفة موجودة أو مجرد اظهار تنبيه
+
     const found = findSubjectAcross(id);
     if(found){
-      // حاول أن تعرض تفاصيله بنفس الطريق المتبع (إن وجد)
-      alert('تم العثور على: ' + found.title + '\nالآن اضغط على المادة في القائمة لفتحها.');
-      // إن أردت يمكن استدعاء أخرى لفتح مباشرة إذا كانت متوفرة في ملفك.
+      alert('تم العثور على: ' + found.title + '\nسيتم الآن فتح ملفات المادة.');
+
+      if(typeof openSubjectFiles === 'function'){
+        openSubjectFiles(found.id);
+      } else {
+        const filesSection = document.getElementById('subjectFiles');
+        if(filesSection) filesSection.scrollIntoView({behavior: 'smooth'});
+      }
     } else {
       alert('المادة غير موجودة حالياً.');
     }
@@ -2940,7 +2966,6 @@ selectMain('college');
   input.addEventListener('keydown', (e)=> {
     if(e.key === 'Escape'){ resultsBox.style.display='none'; }
     if(e.key === 'Enter'){
-      // إذا نتيجة وحيدة، افتحها
       const first = resultsBox.querySelector('.res-item');
       if(first) first.click();
     }
