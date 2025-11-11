@@ -327,39 +327,8 @@ section {
   |
   <a href="contact.html" style="margin:0 8px; color:#666; text-decoration:none;">اتصل بنا</a>
 </div>
-  <!-- باقي محتوى الصفحة -->
+ 
 </body>
-<!-- ===== نموذج دخول بدون حفظ تلقائي أو تذكرني ===== -->
-<div id="loginForm" style="max-width:400px; margin:auto;" aria-hidden="false">
-  <div class="field">
-    <label for="user">المعرف الخاص</label>
-    <input id="user" name="custom_user" type="text"
-           inputmode="verbatim"
-           autocomplete="off"
-           autocorrect="off"
-           autocapitalize="none"
-           spellcheck="false" />
-  </div>
-
-  <div class="field">
-    <label for="pwd">رمز الدخول</label>
-    <input id="pwd" name="access_key" type="password"
-           inputmode="verbatim"
-           autocomplete="new-password"
-           autocorrect="off"
-           autocapitalize="none"
-           spellcheck="false" />
-  </div>
-
-  <button id="loginBtn" style="width:100%;">دخول</button>
-  <div id="errorMsg" style="color:red; margin-top:8px;"></div>
-</div>
-
-<hr class="sep">
-
-<!-- ===== المحتوى المحمي ===== -->
-<div id="protectedContent" class="hidden">
-
 
 <header style="background-color: #d0e6ff; padding: 15px; text-align: center;">
   <h1 style="
@@ -443,9 +412,7 @@ const data = {
         {label:'د. نبيل – المحاضرة 3', url:'https://youtu.be/neJ-z9Gh8yU'},
         {label:'د. نبيل – المحاضرة 4', url:'https://youtu.be/4nOBWSQXsck'},
         {label:'د. نبيل – المحاضرة 5', url:'https://youtu.be/ARIAc8yfZZM'},
-        {label:'د. نبيل – المحاضرة 6', url:'https://youtu.be/37wmv8L2C9A'},
-        {label:'المحاضرة الاولى 2025', url:'https://t.me/Abdalmgef7129/24'},
-        {label:'المحاضرة الثانية 2025', url:'https://t.me/Abdalmgef7129/68'}
+        {label:'د. نبيل – المحاضرة 6', url:'https://youtu.be/37wmv8L2C9A'}
       ],
       books:[
         {label:'كتاب مبادئ المحاسبة 1 - ', url:'https://drive.google.com/open?id=1hNg6XQ8GcyzdVAxjCfFf6KE8Nq9N0kfK&usp=drivesdk'},
@@ -490,7 +457,7 @@ videos:[
         {label:'د. نبيل – المحاضرة 4', url:'https://drive.google.com/file/d/1Tf5zr4_28nbhp4IQ10cvzcr5CyyhjzWt/view?usp=drivesdk'},
         {label:'د. نبيل – المحاضرة 5', url:'https://drive.google.com/file/d/1OBHMxCZ9hBBMq7W5_otRpzdbxvEiqlZV/view?usp=drivesdk'},
         {label:'د. نبيل – المحاضرة 6', url:'https://drive.google.com/file/d/1vMgKVe1-h1BFGDBzDBU9C3JDN7nDqhPO/view?usp=drivesdk'},
-        {label:'د. نبيل – المحاضرة 6', url:'https://youtube.com/playlist?list=PL8436LuIZoAprnLNl81NBLtHx5sNd_T_n'}
+        {label:'شرح محاسبة 2 صادق جزيلان', url:'https://youtube.com/playlist?list=PL8436LuIZoAprnLNl81NBLtHx5sNd_T_n'}
 ], 
 
 books:[
@@ -3704,190 +3671,4 @@ setInterval(() => {
   fixedCountdown.innerHTML = 
     `🕒 الوقت المتبقي للاختبارات: ${days}يوم`;
 }, 1000);
-</script>
-</h2>  <p>اضغط زر تسجيل الخروج للعودة إلى نموذج الدخول.</p>
-  <div style="margin-top:12px">
-    <button id="logoutBtn" style="background:#ffd6d6">تسجيل خروج</button>
-  </div>
-</div>
-
-<script>
-  const users = {
-    // دفعة 2025
-
-    "salim":"0580616010",
-    "Sadeq": "0533263031",
-    "Mohamed": "0545237384",
-    "Fatima": "0546348345",
-   // ايمان القاسمي
-    "eman": "0557211628",
-   // عبدالمجيد عبدالله المنيعي
-    "712986967":"712986967",
-// ايلاف فؤاد
-"Elaf": "0555555555",
-// غالب احمد محمد علي صوفان
-"Ghalep": "778164039",
-// محمد سليمان الخليدي
-"Mohamed009": "mm83nn81",
-// ملاك عبدالله السروري
-"Malak": "2025",
-// شوق عيظة باظبي
-"shog4004": "As055703",
-// بشير علي محمد علي عبده
-"Basheer": "776884792",
-// محمد عبده اليافعي
-"Mohammed 77": "Aa123456$#",
-// هناء قاسم
-"HanAlmrri": "H123123",
-// عبدالرحمن جميل حيدر عبيد الفتاحي
-"abualshooq": "aghon",
-// محمد حسين علي العمودي
-"Mohammed alamoudi": "Mm0594990904",
-// مهيب المخلافي
-"Muheeb": "771901235",
-// سميه سريع الضياني
-"SUMYAH SAREA": "18824300484",
-// ريناد فضل بن طالب
-"Renad": "123456",
-// عائشة مقبل سعد عائشة الحسني
-"Aisha9452": "Aisha9452",
-// البراء اشرف
-"Baraa": "7890",
-// جارالله عمر محسن قاسم
-"mmmmmm": "123456789",
-// محمد رياض صالح
-"Mohammed Riad": "21107",
-// عبدالرحمن عبدالحميد محمد صالح
-"abu Ghaith": "aa88af87",
-// علاء محمد الفاتش
-"AlaaMohammed": "0536432862",
-// مرام الريمي
-"Maram73": "Maram2005",
-// عبدالرحمن حزام
-"dahim-10": "aaee2003AAEE",
-// اكرم محمد المثنى
-"Asdfghjkl": "Asd@50333100",
-// أشجان عبده اليافعي
-"Ashgan1@": "&Aa123456$",
-// فوزي محمد محمد العصامي 
-"osyd": "714403076",
-// عمار مقبل محمد
-"Ammar": "Ahmed",
-// فرسان عبدالله احمد عبدالله
-"ffoorrssaan": "772101098",
-// Rawa Mahmood Hamood
-"Rawa": "220369",
-// جواهر مجدي
-"jawahir3": "Jawahir_***_123",
-// أريج أمين الجراش
-"أريج": "0531980006",
-// فاطمة عبده صالح
-"Fatimaabdu": "Ff71723",
-// عبدالرحمن فكري مرشد النمنم
-"abdo.fikri25": "Learn2025",
-// حنين فيصل
-"Hanine Faisal": "Hanine1122",
-// اسامة معافا
-"osasy126": "OS123456os",
-// احمد فوزي الدقيل
-"ahmadfozy7755": "a1d2c3",
-// اشرف عمار عبدالقوي الغانمي
-"ashrafalghanmi": "554395asd",
-// حمزه ناصر احمد
-"hamzawy": "ha777zawy",
-// محمد عقيل الراجحي
-"eha5": "mohameed",
-// فراس عبدالله كامل
-"Feras": "Feras123",
-// كوثر احمد عبده الحيدري
-"Kawthar ha": "641994kh",
-// مهند جمال محمد
-"jamal1975": "0500059341",
-// مروان محمد
-"MARWAN": "M123456",
-// شهد خالد الكثيري
-"Shahdkhl": "Sh123456",
-// عفيف صلاح محمد عفيف
-"Afif salah mohammed afif": "0506696900",
-// اميره
-"Cel369jj": "ppoo123456789",
-// منير عبد الحكيم علي مجلي
-"muneer123": "Mm779216841",
-// عبدالله منير
-"Ah_79": "power1279",
-// احمد صالح احمد عمر
-"Ahmed": "827ha6wj",
-// زهراء توفيق علوي المجربي
-"zahra": "734306666",
-// ثناء علي
-"thana11m": "123456",
-// فاطمة صالح
-"Fatma saleh": "73885550",
-// فاطمه محمد احمد عبدالله
-"fti7ti": "12345567fff",
-// محفوظ حسن محفوظ
-"Adam al-sayari": "22188661",
-// هادي صالح
-"Almuraisi": "Almuraisi",
-// محمد صادق
-"Fm123456": "654321",
-// شهد قائد منصور
-"Shahd8899": "Mosha1219",
-// هدى وجيه زين
-"Huda@2006": "EsE#EdU20876",
-// احمد عيسى
-". Ahm321": "Ahmed925",
-// سامي حيدره صالح
-"Sami": "Sami@1994",
-// نبيل
-"N1BIL": "N1bil@0550",
-// حسان عيضة أحمد العماد
-"hassan alemad": "2181",
-// اسماء محمد مكرم
-"Asma Mokarm": "00998877",
-// رحاب عادل
-"Rehab. Alhomidi": "Rneng97",
-
-  };
-
-   const loginForm = document.getElementById('loginForm');
-  const protectedContent = document.getElementById('protectedContent');
-  const userEl = document.getElementById('user');
-  const pwdEl = document.getElementById('pwd');
-  const loginBtn = document.getElementById('loginBtn');
-  const logoutBtn = document.getElementById('logoutBtn');
-  const errorMsg = document.getElementById('errorMsg');
-
-  document.addEventListener('DOMContentLoaded', () => {
-    protectedContent.classList.add('hidden');
-    loginForm.classList.remove('hidden');
-  });
-
-  function tryLogin() {
-    const name = (userEl.value || '').trim();
-    const code = (pwdEl.value || '').trim();
-
-    if (name && users[name] && users[name] === code) {
-      loginForm.classList.add('hidden');
-      protectedContent.classList.remove('hidden');
-
-      userEl.value = '';
-      pwdEl.value = '';
-      errorMsg.textContent = '';
-    } else {
-      errorMsg.textContent = "المعرف أو الرمز غير صحيح";
-      pwdEl.value = '';
-      pwdEl.focus();
-    }
-  }
-
-  logoutBtn.addEventListener('click', () => {
-    protectedContent.classList.add('hidden');
-    loginForm.classList.remove('hidden');
-    userEl.focus();
-  });
-
-  loginBtn.addEventListener('click', tryLogin);
-  userEl.addEventListener('keydown', e => { if (e.key === 'Enter') tryLogin(); });
-  pwdEl.addEventListener('keydown', e => { if (e.key === 'Enter') tryLogin(); });
 </script>
